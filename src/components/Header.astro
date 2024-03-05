@@ -1,0 +1,102 @@
+---
+const links = [
+    {
+        name:"Home",
+        href:'/'
+    },
+    {
+        name:"About",
+        href:'/#about'
+    },
+    {
+        name:"Services",
+        href:'/#services'
+    },
+    {
+        name:"Places",
+        href:'/#places'
+    },
+    {
+        name:"Contacts",
+        href:'/#contacts'
+    },
+]
+
+
+---
+
+
+<header class="flex justify-between items-center w-full mb-[-64px] z-50">
+    <h3 class="">Hola</h3>
+        <nav class="md:block hidden">
+            <ul class="">
+                <li class=" gap-x-10 flex">
+                    {
+                        links.map(link =>(
+                        <a href={link.href} 
+                        class="hover:text-palete-blue-light transition-colors">
+                            {link.name}
+                        </a>
+                        ))
+                    }
+                </li>
+            </ul>
+        </nav>
+      
+      <div class="flex gap-10">
+            <ul>
+                <li class=" gap-x-3 flex">
+                    <a class=" hover:font-extrabold" href="/">En</a>
+                    <a class=" hover:font-extrabold" href="/">Es</a>
+                    <a class=" hover:font-extrabold" href="/">Rs</a>
+                </li>
+            </ul>
+            <button class="md:hidden" id="menuToggle">
+               
+            </button>
+            <div class="hidden w-[95%]  fixed  inset-0 mt-[8%] left-[2%] " id="mobileMenu">
+                
+                <ul class="font-medium flex flex-col py-5 mt-4 rounded-lg bg-palete-blue-dark ">
+                    <li>
+                        {
+                            links.map(link =>(
+                            <a href={link.href} 
+                            class="block py-2 px-3 text-white md:p-0 dark:text-white text-center">
+                                {link.name}
+                            </a>
+                            ))
+                        }
+                    </li>
+                  
+                </ul>
+              </div>
+</div>
+</header>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        let isMenuOpen = false; // Variable para almacenar el estado del menú
+        menuToggle.textContent = 'open'
+
+        if (menuToggle && mobileMenu) {
+            menuToggle.addEventListener('click', function() {
+                isMenuOpen = !isMenuOpen; // Cambiar el estado del menú
+                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('block');
+                // Actualizar el valor de 'value' según el estado del menú
+                menuToggle.textContent = isMenuOpen ? 'close' : 'open';
+            });
+
+            document.addEventListener('click', function(event) {
+                if (mobileMenu.contains(event.target)) {
+                    isMenuOpen = false; // Cerrar el menú si el clic ocurrió dentro de él
+                    mobileMenu.classList.add('hidden');
+                    mobileMenu.classList.remove('block');
+                    menuToggle.textContent = 'open'; // Actualizar el texto del botón
+                }
+            });
+        }
+    });
+</script>

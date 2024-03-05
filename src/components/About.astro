@@ -1,0 +1,66 @@
+---
+
+ const elements = [
+    {
+        num:'1',
+        title:'Travel To Your Place',
+        text:'Lorem ipsum is placeholder text commonly used in the graphic, print',
+        active:false
+    },
+    {
+        num:'2',
+        title:'Find Your Travel Best Place',
+        text:'Lorem ipsum is placeholder text commonly used in the graphic, print',
+        active:false
+    },
+    {
+        num:'3',
+        title:'Enjoy The Journey With Pleasure',
+        text:'Lorem ipsum is placeholder text commonly used in the graphic, print',
+        active:true
+    }
+ ]
+
+---
+
+
+<section id="about" class="md:h-screen h-auto flex-col flex items-center lg:mt-10 mt-20">
+<div class="lg:w-[45%]  text-center ">
+    <h2 class="md:text-4xl text-2xl font-bold ">
+        We Will Help You Travel And You Can Consult With Us.
+    </h2>
+    <p class="mt-5 text-palete-white-blue">
+        Lorem ipsum is placeholder text commonly used in the graphic, print
+    </p>
+</div>
+<div class="flex flex-row items-start md:justify-around w-full mt-14 gap-5">
+    <div class="md:grid hidden grid-cols-2 grid-rows-5 gap-5 " >
+        <img 
+        src="../../public/images/Caballero_de_Paris.webp" 
+        alt="Caballero de Paris" 
+        class="row-start-1 row-end-3 col-start-1 col-end-2 bg-palete-blue-dark w-40 justify-self-end rounded-lg">
+        <img 
+        src="../../public/images/Habana.webp" 
+        alt="Habana" 
+        class="row-start-3 row-end-6 col-start-1 col-end-2 bg-red-400 w-48 rounded-lg justify-self-end">
+        <img 
+        src="../../public/images/Cristo_Habana.webp" 
+        alt="Cristo Habana" 
+        class=" row-start-2 row-end-5 col-start-2 col-end-3 bg-blue-400 w-56 h-[280px] rounded-lg">
+       
+        </div>
+    <div class="flex flex-col gap-12 ">
+    {
+        elements.map(({title, text,num,active}) => (
+        <div class="flex gap-6 ">
+        <div class={`bg-[#2D2C2C] ${active ? 'text-palete-blue-light shadow-md shadow-palete-blue-dark' : 'text-white'} w-12 h-12 flex items-center justify-center rounded-lg font-bold`}>{num}</div>
+        <div class="">
+            <h3 class={`text-xl font-extrabold ${active ? 'text-palete-blue-light ' : 'text-white'}`}>{title}</h3>
+            <p class="text-palete-white-blue">{text}</p>
+        </div>
+    </div>
+        ))
+    }
+</div>
+</div>
+</section>
