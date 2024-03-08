@@ -4,7 +4,7 @@ const links = [
         name:"Home",
         href:'/'
     },
-    
+
     {
         name:"Places",
         href:'/#places'
@@ -80,9 +80,10 @@ const links = [
         const menuToggle = document.getElementById('menuToggle');
         const mobileMenu = document.getElementById('mobileMenu');
         let isMenuOpen = false; // Variable para almacenar el estado del menú
-        menuToggle.textContent = 'open'
 
         if (menuToggle && mobileMenu) {
+            menuToggle.textContent = 'open';
+
             menuToggle.addEventListener('click', function() {
                 isMenuOpen = !isMenuOpen; // Cambiar el estado del menú
                 mobileMenu.classList.toggle('hidden');
@@ -92,7 +93,7 @@ const links = [
             });
 
             document.addEventListener('click', function(event) {
-                if (mobileMenu.contains(event.target)) {
+                if (mobileMenu.contains(event.target as Node)) {
                     isMenuOpen = false; // Cerrar el menú si el clic ocurrió dentro de él
                     mobileMenu.classList.add('hidden');
                     mobileMenu.classList.remove('block');
