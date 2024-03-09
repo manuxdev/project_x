@@ -1,31 +1,6 @@
 ---
-const places = [
-    {
-        name:"Habana",
-        desc:"Lorem ipsum is placeholder text commonly used in the graphic, print.",
-        img:'/images/Cristo_Habana.webp',
-        href:"/"
-    },
-    {
-        name:"Matanzas",
-        desc:"Lorem ipsum is placeholder text commonly used in the graphic, print.",
-        img:'/images/Cristo_Habana.webp',
-        href:"/"
-    },
-    {
-        name:"Central",
-        desc:"Lorem ipsum is placeholder text commonly used in the graphic, print.",
-        img:'/images/Cristo_Habana.webp',
-        href:"/"
-    },
-    {
-        name:"Santiago de Cuba",
-        desc:"Lorem ipsum is placeholder text commonly used in the graphic, print.",
-        img:'/images/Cristo_Habana.webp',
-        href:"/"
-    },
+import {places} from '../data/places'
 
-]
 
 ---
 
@@ -44,12 +19,20 @@ const places = [
        {
         places.map(place =>(
         <div class=" md:w-[30%] w-1/4 group rounded-2xl cursor-pointer overflow-hidden md:hover:w-[100%] transition-all  duration-300">
-            <a href={place.href}>
-        <img src={place.img} alt={place.name} class="w-full h-full object-cover group-hover:scale-125 group-hover:opacity-50 transition-all duration-300">
+            <a href={place.name.toLowerCase()} transition:name={`portada ${place.name} box`}>
+        <img src={place.img}
+            alt={place.name} 
+            class="w-full h-full object-cover group-hover:scale-125 group-hover:opacity-50 transition-all duration-300"
+            transition:name={`imagen-portada ${place.name} image`}
+         >
         <div class="w-full h-1/2 mt-[-250px] relative">
-            <div class="w-full absolute bottom-3 p-5 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                <h3 class="text-4xl font-bold ">{place.name}</h3>
-                <p class="w-3/4 md:inline hidden">{place.desc}</p>
+            <div class="w-full absolute bottom-3 p-5 opacity-0 group-hover:opacity-100 transition-all duration-100 ">
+                <h3 class="text-4xl font-bold delay-200 transition-all duration-200 opacity-0 group-hover:opacity-100"
+                transition:name={`image-name ${place?.name} name`}
+                >{place.name}</h3>
+                <p class="w-3/4 md:inline hidden delay-200 transition-all duration-200 opacity-0 group-hover:opacity-100" 
+                transition:name={`image-desc ${place?.name} desc`}
+                >{place.desc}</p>
             </div>
         </div>
     </a>
@@ -61,11 +44,12 @@ const places = [
        {
         places.map(place =>(
         <div class="rounded-2xl cursor-pointer overflow-hidden">
-            <a href={place.href}>
-        <img src={place.img} alt={place.name} class="w-full h-full object-cover  opacity-75">
+            <a href={place.name.toLowerCase()} transition:name={`portada ${place.name} box`}>
+        <img src={place.img} alt={place.name} class="w-full h-full object-cover  opacity-75 "
+        transition:name={`imagen-portada ${place.name} image`}>
         <div class="w-full h-1/2 mt-[-120px] relative">
             <div class="w-full absolute bottom-3 p-5">
-                <h3 class="md:text-4xl text-2xl font-bold ">{place.name}</h3>
+                <h3 class="md:text-4xl text-2xl font-bold "  transition:name={`image-name ${place?.name} name`}>{place.name}</h3>
             </div>
         </div>
     </a>
