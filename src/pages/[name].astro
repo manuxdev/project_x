@@ -1,19 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import {places} from '../data/places'
+import {itineraryData} from '../data/itinerary'
 import Itinerary from '../components/react/Itinerary';
 
 const {name} = Astro.params
 
 const place = places.find(place => place.name.toLowerCase() === name)
-
-function handleItineraryChange(newItinerary: any) {
- console.log('Itinerario seleccionado:', newItinerary);
-}
+let itinerario = (itineraryData[0].details[0]);
 
 ---
-
-
 
 <Layout title=`${place?.name}`>
 	<main class="" transition:name={`portada ${name} box`}>
@@ -39,16 +35,21 @@ function handleItineraryChange(newItinerary: any) {
                         transition:name={`image-desc ${place?.name} desc`}
                         >{place?.desc}</p>
                     </div>
-                    <Itinerary client:visible place={place?.name} onItineraryChange={handleItineraryChange}/>
+                   
+                    <Itinerary client:visible place={place?.name} />
                  
             </div>   
             <div>
-            Parrafo    
+            <p id="itinerario">{itinerario}</p>    
             </div> 
     </section>
 	</main>
 </Layout>
 
-<script>
-
+<script define:vars={{ itineraryData }}>
+document.addEventListener('itineraryChange' ,(e)=> {
+    const elemento = itineraryData.find((element)=>element.title == e.detail);
+    const displayElement = document.getElementById('itinerario');
+    displayElement.textContent = elemento.details;
+ });
 </script>
