@@ -21,14 +21,15 @@ function Itinerary({place}) {
    
     if (matchingItineraries.length > 0) {
       const firstItinerary = matchingItineraries[0];
-      setItinerary(firstItinerary.title);
+      document.dispatchEvent(new CustomEvent('itineraryChange', { detail:`${firstItinerary.title}`}))
+      setItinerary(firstItinerary.title);    
     }
   
   }, [setItinerary]);
   
  
   return (
-    <div className="flex z-20 justify-center items-center w-full">
+    <div className="flex z-20 lg:justify-center justify-start w-full items-center lg:overflow-x-hidden overflow-auto lg:whitespace-normal whitespace-nowrap ">
       {
         matchingItineraries.map(item => (
           <div key={item.title} className="flex items-center ">

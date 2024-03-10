@@ -104,21 +104,6 @@ export const itineraryData = [
       ],
     },
     {
-      title: "Jeep Safari",
-      desc:
-        "Adventure of a jeep safari in the countryside of the province of Matanzas.",
-      place: "Matanzas",
-      details: [
-        "Pickup at 8:30 am.",
-        "We drive to Coral Beach to practice snorkeling (included equipment).",
-        "Enjoy horseback rides close to the ocean or, if you prefer, participate in fishing on the coast.",
-        "Then we will visit the Saturn Cave (cenote) to refresh and explore this fascinating underground environment.",
-        "Take a walk through the Varadero field, where you will have the opportunity to see how the locals live and learn about everyday Cuban life.",
-        "Included lunch: choose between lobster or chicken, to savor authentic Cuban cuisine.",
-        "The route ends around 3:00 pm, giving you a complete experience of the countryside and local culture.",
-      ],
-    },
-    {
       title: "Zapata Swamp Tour",
       desc:
         "During this agricultural tour, we will see the Cuban countryside, visit a mini farm where we will familiarize ourselves with Cuban flora and fauna, see a crocodile breeding facility and swim and dive in the Caribbean Sea in the Bay of Pigs. We will also see cenotes where you can swim. The duration of the tour: from 8.00 to 16.00.",
@@ -255,26 +240,6 @@ export const itineraryData = [
         "Visita el Mural de la Prehistoria.",
         "Disfruta de un paseo a caballo (opcional, no incluido, 10-15 USD por persona).",
         "Viaje de regreso a La Habana o Varadero.",
-      ],
-    },
-  
-    {
-      title: "City Tour Havana for Hour",
-      desc:
-        "Explora cada rincón de La Habana en un auto clásico convertible por tiempo. El precio es de $25 USD/hour.",
-      place: ["Havana", "La Habana"],
-      details: [
-        "Explora cada rincón de La Habana en un auto clásico convertible por tiempo. El precio es de $25 USD/hour.",
-        "Capitol of Havana",
-        "Revolution Square",
-        "Colon Cemetery",
-        "Havana Forest",
-        "John Lennon Park",
-        "Havana Malecon",
-        "Morro Cabin",
-        "Fusterlandia",
-        "Che Guevara Military Museum",
-        "Christ of Havana",
       ],
     },
     {

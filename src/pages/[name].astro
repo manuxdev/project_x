@@ -7,7 +7,6 @@ import Itinerary from '../components/react/Itinerary';
 const {name} = Astro.params
 
 const place = places.find(place => place.name.toLowerCase() === name)
-let itinerario = (itineraryData[0].details[0]);
 
 ---
 
@@ -22,9 +21,6 @@ let itinerario = (itineraryData[0].details[0]);
             >
             <div class="absolute h-full w-full bg-opacity-80 bg-blend-multiply bg-gradient-to-t from-[#07111dee] bg-[#252525] z-10">
             </div>
-                <!-- <img src={place?.img} alt={place?.name} class="w-full max-h-[500px] object-cover blur-sm opacity-30 absolute -z-10 "
-                transition:name={`imagen-portada ${place?.name} image`}
-                > -->
                     <div class="flex flex-col gap-y-3 text-center z-20">
                 
                        
@@ -39,17 +35,23 @@ let itinerario = (itineraryData[0].details[0]);
                     <Itinerary client:visible place={place?.name} />
                  
             </div>   
-            <div>
-            <p id="itinerario">{itinerario}</p>    
-            </div> 
+       
+                <div class="">
+                    <h3>Itinerario</h3>
+                <p id="itinerario" class="text-start p-5"></p>    
+             </div>
     </section>
 	</main>
 </Layout>
 
 <script define:vars={{ itineraryData }}>
-document.addEventListener('itineraryChange' ,(e)=> {
-    const elemento = itineraryData.find((element)=>element.title == e.detail);
-    const displayElement = document.getElementById('itinerario');
-    displayElement.textContent = elemento.details;
- });
-</script>
+    document.addEventListener('itineraryChange', (e) => {
+        const elemento = itineraryData.find((element) => element.title == e.detail);
+        const displayElement = document.getElementById('itinerario');
+        // Procesar cada elemento de 'details' para agregar un guion al inicio y unir con un salto de línea
+        const formattedDetails = elemento.details.map(detail => `- ${detail}`).join('\n');
+        // Reemplazar los saltos de línea con etiquetas <br> para HTML
+        const htmlFormattedDetails = formattedDetails.replace(/\n/g, '<br>');
+        displayElement.innerHTML = htmlFormattedDetails; // Usar innerHTML para interpretar las etiquetas <br>
+    });
+    </script>
