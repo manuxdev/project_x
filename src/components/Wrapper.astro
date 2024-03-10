@@ -1,0 +1,10 @@
+---
+import Itinerary from '../components/react/Itinerary';
+
+const { placeX, handleItineraryChange } = Astro.props
+---
+
+<div>
+
+    <Itinerary client:visible place={placeX} onItineraryChange={handleItineraryChange} />
+</div>

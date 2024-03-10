@@ -1,40 +1,32 @@
-'use client'
 import { useEffect, useState } from "react";
 import { itineraryData } from "../../data/itinerary"
 import ItineraryTag from "./ItineraryTag";
 
 
-function Itinerary({place, onItineraryChange }) {
+function Itinerary({place}) {
+  
   const [itinerary, setItinerary] = useState();
   const matchingItineraries = itineraryData.filter((item) =>
     item.place.includes(place)
   );
- useEffect(() => {
-    const handleItineraryChange = (event) => {
-      
-      
-        setItinerary(event.detail);
-        onItineraryChange(event.detail);
-      
-    };
 
-    window.addEventListener('itineraryChange' , handleItineraryChange);
-
-    return () => {
-      window.removeEventListener('itineraryChange', handleItineraryChange);
-    };
- }, [onItineraryChange]);
+  const handleItineraryChanges = (item) => {
+    setItinerary(item);
+    document.dispatchEvent(new CustomEvent('itineraryChange', { detail:`${item}`}))
+  
+};
 
   useEffect(() => {
+
+   
     if (matchingItineraries.length > 0) {
       const firstItinerary = matchingItineraries[0];
       setItinerary(firstItinerary.title);
     }
+  
   }, [setItinerary]);
   
-  const handleItinerary = (newItinerary) => {
-  
-  };
+ 
   return (
     <div className="flex z-20 justify-center items-center w-full">
       {
@@ -45,7 +37,7 @@ function Itinerary({place, onItineraryChange }) {
                   title={item.title}
                   isSelected={itinerary === `${item.title}`}
                   // onClick={handleItinerary}
-                  onClick={() => window.dispatchEvent(new CustomEvent('itineraryChange', { detail:`${item.title}`}))}
+                  onClick={() => handleItineraryChanges(item.title)}
                   itinerary = {item.title}
                 />
       </div>
