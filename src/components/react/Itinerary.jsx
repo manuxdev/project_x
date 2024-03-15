@@ -17,13 +17,10 @@ function Itinerary({place}) {
 };
 
   useEffect(() => {
-
-   
-    if (matchingItineraries.length > 0) {
       const firstItinerary = matchingItineraries[0];
       document.dispatchEvent(new CustomEvent('itineraryChange', { detail:`${firstItinerary.title}`}))
-      setItinerary(firstItinerary.title);    
-    }
+      setItinerary(firstItinerary.title );    
+
   
   }, [setItinerary]);
   

@@ -1,0 +1,55 @@
+---
+import Facebook from './icons/Facebook.astro'
+import Instagram from './icons/Instagram.astro'
+import Whatsapp from './icons/Whatsapp.astro'
+
+
+const links = [
+    {
+        name:"Home",
+        href:'/'
+    },
+
+    {
+        name:"Places",
+        href:'/#places'
+    },
+    {
+        name:"About",
+        href:'/#about'
+    },
+    {
+        name:"Services",
+        href:'/#services'
+    },
+  
+    {
+        name:"Contacts",
+        href:'/#contacts'
+    },
+]
+
+---
+
+<footer class="h-[100px] flex items-center justify-around bg-[#1f1f1f] px-10">
+    <div>
+        <h4>Hola</h4>
+    </div>
+    <ul class="">
+        <li class=" gap-x-10 grid grid-col-3">
+            {
+                links.map(link =>(
+                <a href={link.href} 
+                class="hover:text-palete-blue-light transition-colors">
+                    {link.name}
+                </a>
+                ))
+            }
+        </li>
+    </ul>
+    <div class="flex gap-x-8  items-center justify-center">
+        <Whatsapp class="w-10 h-10"/>
+        <Facebook class="w-10 h-10"/>
+        <Instagram class="w-10 h-10"/>
+    </div>
+</footer>

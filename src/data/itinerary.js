@@ -46,7 +46,7 @@ export const itineraryData = [
       ],
     },
     {
-      title: "Havana Tour + Cannon Sho",
+      title: "Havana Tour + Cannon Shot",
       desc:
         "We offer a unique excursion by La Habana in a classic car with a private guide who will be delighted to take you to an unforgettable experience.",
       place: ["Havana", "La Habana"],
