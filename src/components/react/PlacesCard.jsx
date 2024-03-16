@@ -1,15 +1,21 @@
 
 import { placesData } from '../../data/places';
+import { itineraryData } from "../../data/itinerary"
 import { useEffect, useState } from "react";
 import '../../utils/animation.css'
-const PlacesCard = () => {
-    
-    const [selectedItinerary, setSelectedItinerary] = useState('');
+const PlacesCard = ({placeName}) => {
 
+    const matchingItineraries = itineraryData.find((item) =>
+    item.place.includes(placeName)
+  );
+    
+    const [selectedItinerary, setSelectedItinerary] = useState(matchingItineraries.title);
+
+    const handleItineraryChange = (event) => {
+        console.log("Se escucha el evento en PlacesCard", event.detail);
+        setSelectedItinerary(event.detail);
+    };
     useEffect(() => {
-        const handleItineraryChange = (event) => {
-            setSelectedItinerary(event.detail);
-        };
         document.addEventListener('itineraryChange', handleItineraryChange);  
     }, []);
 

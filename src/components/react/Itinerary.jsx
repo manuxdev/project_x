@@ -20,7 +20,7 @@ function Itinerary({place}) {
       const firstItinerary = matchingItineraries[0];
       document.dispatchEvent(new CustomEvent('itineraryChange', { detail:`${firstItinerary.title}`}))
       setItinerary(firstItinerary.title );    
-
+    console.log("primer evento de itinerario ", firstItinerary.title);
   
   }, [setItinerary]);
   
