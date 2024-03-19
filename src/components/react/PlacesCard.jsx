@@ -12,7 +12,6 @@ const PlacesCard = ({placeName}) => {
     const [selectedItinerary, setSelectedItinerary] = useState(matchingItineraries.title);
 
     const handleItineraryChange = (event) => {
-        console.log("Se escucha el evento en PlacesCard", event.detail);
         setSelectedItinerary(event.detail);
     };
     useEffect(() => {
@@ -25,14 +24,14 @@ const PlacesCard = ({placeName}) => {
    
     return (
     <div className='p-10'>
-        <ul className='md:grid flex-col flex  grid-cols-2 gap-10 '>
+        <ul className='md:grid flex-col flex grid-cols-2 gap-10 '>
         {
             filteredPlaces.map(element =>(
-                <li key={element.title} className='shadow-md shadow-palete-blue-light w-full rounded-lg flex md:flex-row flex-col '>
-                   <div className='md:w-1/2'>
-                    <img src="/images/Trinidad.webp" alt="" className='object-cover rounded-lg'/>
+                <li key={element.title} className='shadow-md shadow-palete-blue-light w-full rounded-lg flex-col section'>
+                   <div className=''>
+                    <img src={element.image} alt={element.title} className='object-cover rounded-lg'/>
                    </div>
-                   <div className='md:w-1/2'>
+                   <div className='py-5'>
                     <h4 className='text-center py-2 text-xl font-bold text-palete-blue-light'>{element.title}</h4>
                     <p className='px-5'>{element.description}</p>
                     </div>

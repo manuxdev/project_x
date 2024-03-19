@@ -1,0 +1,27 @@
+---
+import Security from './icons/security.astro'
+import Quality from './icons/quality.astro'
+---
+
+<section class=" relative  flex sm:flex-row flex-col  sm:gap-24 gap-10" id="about">
+    <div class="flex flex-col justify-center sm:w-1/2 sm:text-start text-center">
+        <h2 class="sm:text-6xl text-4xl font-bold ">About Company</h2>
+        <p class="sm:mt-20 mt-10"> Nos destacamos por proporcionar experiencias turísticas sin precedentes, ofreciendo tours personalizados en autos clásicos que capturan la esencia vintage de la isla.  Con tarifas competitivas, estamos comprometidos con la prestación de un servicio de calidad que refleja la autenticidad cubana y la hospitalidad. </p>
+        <p class="text-palete-blue-light mt-5 p-5 bg-[#202020] rounded-xl">Descubre la isla con nosotros y haz que tu visita a Cuba sea una experiencia inolvidable.</p>
+    </div>
+    <div class="flex gap-5 sm:w-1/2">
+        <div class="flex flex-col justify-center items-center gap-5 max-w-[250px] text-center">
+            <img src="/images/security.webp" alt="Viaje Seguro" class=" rounded-lg opacity-50">
+            <Security class = 'w-20 h-20 mt-[-60px] bg-[#202020] z-10 rounded-xl stroke-palete-blue-light'/>
+            <h3 class="font-bold text-xl">Seguridad</h3>
+            <p>Creamos las condiciones para que su viaje sea totalmente seguro.</p>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-5 max-w-[250px] text-center">
+            <img src="/images/confort.webp" alt="Viaje calidad" class=" rounded-lg opacity-50">
+            <Quality class = 'w-20 h-20 mt-[-60px] bg-[#202020] z-10 rounded-xl fill-palete-blue-light'/>
+            
+            <h3 class="font-bold text-xl">Confort</h3>
+            <p>Creamos las condiciones para que su viaje sea totalmente seguro. </p>
+        </div>
+    </div>
+</section>

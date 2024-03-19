@@ -20,7 +20,6 @@ function Itinerary({place}) {
       const firstItinerary = matchingItineraries[0];
       document.dispatchEvent(new CustomEvent('itineraryChange', { detail:`${firstItinerary.title}`}))
       setItinerary(firstItinerary.title );    
-    console.log("primer evento de itinerario ", firstItinerary.title);
   
   }, [setItinerary]);
   
@@ -34,7 +33,6 @@ function Itinerary({place}) {
                 <ItineraryTag
                   title={item.title}
                   isSelected={itinerary === `${item.title}`}
-                  // onClick={handleItinerary}
                   onClick={() => handleItineraryChanges(item.title)}
                   itinerary = {item.title}
                 />

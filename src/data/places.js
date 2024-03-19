@@ -3,9 +3,9 @@ export const placesData = [
       id: 1,
       title: "Castle in the Sky",
       description:
-        "The Castle in the Sky offers a breathtaking panoramic view of Pinar del Río. Built in the 19th century as a lookout post, this historic site has been restored for visitors to enjoy its rich history.",
+        "The Castle in the Sky offers a breathtaking panoramic view of Pinar Del Río. Built in the 19th century as a lookout post, this historic site has been restored for visitors to enjoy its rich history.",
       image: "/images/places/Castillo_Cielo.webp",
-      tag: "Pinar del Río",
+      tag: "Pinar Del Río",
       itinerary: ["Tour Viñales - Soroa", "Viñales - Soroa Tour"],
     },
     {
@@ -34,9 +34,9 @@ export const placesData = [
       id: 5,
       title: "Orchid Garden",
       description:
-        "The Orchid Garden in Pinar del Río is a floral paradise established in the 20th century. With an impressive collection of native and international orchids, this place offers a unique experience for botanical enthusiasts.",
+        "The Orchid Garden in Pinar Del Río is a floral paradise established in the 20th century. With an impressive collection of native and international orchids, this place offers a unique experience for botanical enthusiasts.",
       image: "/images/places/Orquideario.webp",
-      tag: "Pinar del Río",
+      tag: "Pinar Del Río",
       itinerary: ["Tour Viñales - Soroa", "Viñales - Soroa Tour"],
     },
     {
@@ -45,7 +45,7 @@ export const placesData = [
       description:
         "The Indian's Cave, discovered in the 19th century, is a fascinating cave system with unique geological formations. Over the years, it has been the scene of archaeological discoveries revealing the presence of ancient cultures in the region.",
       image: "/images/places/nuevos_places/Cueva_Indio.webp",
-      tag: "Pinar del Río",
+      tag: "Pinar Del Río",
       itinerary: ["Tour Viñales - Soroa", "Viñales - Soroa Tour"],
     },
     {
@@ -277,7 +277,7 @@ export const placesData = [
       description:
         "Soroa, known as the 'rainbow of Cuba,' is famous for its botanical garden and waterfalls. Founded in the 19th century, the area is a natural paradise that has attracted flora and fauna enthusiasts from around the world for generations.",
       image: "/images/places/Pinar_Cascada.webp",
-      tag: "Pinar del Río",
+      tag: "Pinar Del Río",
       itinerary: ["Tour Viñales - Soroa", "Viñales - Soroa Tour"],
     },
   
@@ -401,7 +401,7 @@ export const placesData = [
       tag: ["Central Region", "Región Central"],
       itinerary: [
         "Tour Trinidad - Cienfuegos (Opcional Nicho)",
-        "Tour de Tres Ciudades: Trinidad - Cienfuegos - Santa Clara",
+        "Tour de Tres Ciudades: Trinidad - Cienfuegos - Santa Clara","Tour Trinidad - Cienfuegos (Nicho opcional)","Tour Tres ciudades Trinidad - Cienfuegos - Santa Clara",
         "Trinidad - Cienfuegos Tour (Optional Nicho)",
         "Three Cities Tour Trinidad - Cienfuegos - Santa Clara",
       ],
@@ -426,7 +426,7 @@ export const placesData = [
   
       itinerary: [
         "Tour Trinidad - Cienfuegos (Opcional Nicho)",
-        "Tour de Tres Ciudades: Trinidad - Cienfuegos - Santa Clara",
+        "Tour de Tres Ciudades: Trinidad - Cienfuegos - Santa Clara","Tour Trinidad - Cienfuegos (Nicho opcional)","Tour Tres ciudades Trinidad - Cienfuegos - Santa Clara",
         "Trinidad - Cienfuegos Tour (Optional Nicho)",
         "Three Cities Tour Trinidad - Cienfuegos - Santa Clara",
       ],
@@ -463,7 +463,8 @@ export const placesData = [
       image: "/images/places/nuevos_places/Monumento_Ernesto_Che_Guevara.webp",
       tag: ["Central Region", "Región Central"],
       itinerary: [
-        "Tour de Tres Ciudades: Trinidad - Cienfuegos - Santa Clara",
+        
+        "Tour de Tres Ciudades: Trinidad - Cienfuegos - Santa Clara","Tour Trinidad - Cienfuegos (Nicho opcional)","Tour Tres ciudades Trinidad - Cienfuegos - Santa Clara",
         "Three Cities Tour Trinidad - Cienfuegos - Santa Clara",
       ],
     },
@@ -475,7 +476,7 @@ export const placesData = [
       image: "/images/places/nuevos_places/Monumento_Tren_Blindado.webp",
       tag: ["Central Region", "Región Central"],
       itinerary: [
-        "Tour de Tres Ciudades: Trinidad - Cienfuegos - Santa Clara",
+        "Tour de Tres Ciudades: Trinidad - Cienfuegos - Santa Clara","Tour Trinidad - Cienfuegos (Nicho opcional)","Tour Tres ciudades Trinidad - Cienfuegos - Santa Clara",
         "Three Cities Tour Trinidad - Cienfuegos - Santa Clara",
       ],
     },
@@ -485,7 +486,7 @@ export const placesData = [
       description:
         "Marvel at the Mural de la Prehistoria, a colossal outdoor mural depicting the evolutionary history of life on Earth. Explore the vibrant artwork set against a natural backdrop.",
       image: "/images/places/nuevos_places/Mural_Prehistoria.webp",
-      tag: "Pinar del Río",
+      tag: "Pinar Del Río",
       itinerary: ["Tour Viñales - Soroa", "Viñales - Soroa Tour"],
     },
     {
@@ -549,7 +550,7 @@ export const placesData = [
   
       itinerary: [
         "Tour Trinidad - Cienfuegos (Opcional Nicho)",
-        "Tour de Tres Ciudades: Trinidad - Cienfuegos - Santa Clara",
+        "Tour de Tres Ciudades: Trinidad - Cienfuegos - Santa Clara","Tour Trinidad - Cienfuegos (Nicho opcional)","Tour Tres ciudades Trinidad - Cienfuegos - Santa Clara",
         "Trinidad - Cienfuegos Tour (Optional Nicho)",
         "Three Cities Tour Trinidad - Cienfuegos - Santa Clara",
       ],
@@ -605,7 +606,7 @@ export const placesData = [
   
       itinerary: [
         "Tour Trinidad - Cienfuegos (Opcional Nicho)",
-        "Tour de Tres Ciudades: Trinidad - Cienfuegos - Santa Clara",
+        "Tour de Tres Ciudades: Trinidad - Cienfuegos - Santa Clara","Tour Trinidad - Cienfuegos (Nicho opcional)","Tour Tres ciudades Trinidad - Cienfuegos - Santa Clara",
         "Trinidad - Cienfuegos Tour (Optional Nicho)",
         "Three Cities Tour Trinidad - Cienfuegos - Santa Clara",
       ],
@@ -648,7 +649,7 @@ export const placesData = [
       tag: ["Central Region", "Región Central"],
   
       itinerary: [
-        "Tour de Tres Ciudades: Trinidad - Cienfuegos - Santa Clara",
+        "Tour de Tres Ciudades: Trinidad - Cienfuegos - Santa Clara","Tour Trinidad - Cienfuegos (Nicho opcional)","Tour Tres ciudades Trinidad - Cienfuegos - Santa Clara",
         "Three Cities Tour Trinidad - Cienfuegos - Santa Clara",
       ],
     },
@@ -683,7 +684,7 @@ export const placesData = [
   
       itinerary: [
         "Tour Trinidad - Cienfuegos (Opcional Nicho)",
-        "Tour de Tres Ciudades: Trinidad - Cienfuegos - Santa Clara",
+        "Tour de Tres Ciudades: Trinidad - Cienfuegos - Santa Clara","Tour Trinidad - Cienfuegos (Nicho opcional)","Tour Tres ciudades Trinidad - Cienfuegos - Santa Clara",
         "Trinidad - Cienfuegos Tour (Optional Nicho)",
         "Three Cities Tour Trinidad - Cienfuegos - Santa Clara",
       ],
@@ -712,7 +713,7 @@ export const placesData = [
       description:
         "Escape to the scenic beauty of Viñales, a valley surrounded by majestic limestone hills. Discover tobacco farms, explore caves, and enjoy the laid-back atmosphere of rural Cuba.",
       image: "/images/places/nuevos_places/Viñales.webp",
-      tag: "Pinar del Río",
+      tag: "Pinar Del Río",
       itinerary: ["Tour Viñales - Soroa", "Viñales - Soroa Tour"],
     },
     {

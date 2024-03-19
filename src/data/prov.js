@@ -1,26 +1,26 @@
 export const places = [
     {
         name:"Pinar del Río",
-        desc:"Lorem ipsum is placeholder text commonly used in the graphic, print.",
+        desc:"Tobacco, mogotes, beaches. Exuberant nature, World Heritage Site, Caribbean authenticity, fascinating culture.",
         img:'/images/pinar_rio.webp',
         href:"/"
     },
    
     {
         name:"La Habana",
-        desc:"Lorem ipsum is placeholder text commonly used in the graphic, print.",
+        desc:"Capital of Cuba, colonial history, iconic architecture, vibrant culture, music and captivating beaches.",
         img:'/images/cristo_vista_havana.webp',
         href:"/"
     },
     {
         name:"Matanzas",
-        desc:"Lorem ipsum is placeholder text commonly used in the graphic, print.",
+        desc:"Spectacular beaches, warm weather, varied tourist activities and great hospitality.",
         img:'/images/varadero.webp',
         href:"/"
     },
     {
         name:"Región Central",
-        desc:"Lorem ipsum is placeholder text commonly used in the graphic, print.",
+        desc:"Colonial architecture, traditional music, beautiful beaches and natural parks.",
         img:'/images/Trinidad.webp',
         href:"/"
     },
