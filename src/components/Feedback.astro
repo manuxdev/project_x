@@ -66,8 +66,9 @@ const feedback = [
   </div>
 </section>
   <script>
-    // @ts-ignore
-      import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+ // @ts-ignore
+ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+    function useSwipper() {
       const swiper = new Swiper('.swiper', {
         slidesPerView: 1,
       spaceBetween: 25,
@@ -91,6 +92,10 @@ breakpoints: {
     },
   }
 });
+
+}
+document.addEventListener("astro:page-load", useSwipper);
+    
 
 
   </script>
