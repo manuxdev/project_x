@@ -4,8 +4,8 @@ import {places} from '../data/prov'
 
 ---
 
-
-<section class=" justify-center items-center flex w-full flex-col mb-40 md:mt-10 mt-24" id="places">
+ 
+<section class=" justify-center items-center flex w-full flex-col mb-40 md:mt-10 mt-24 " id="places">
     <div class="lg:w-[50%]  text-center ">
         <h2 class="md:text-4xl text-2xl font-bold ">
             We Will Help You Travel And You Can Consult With Us.
@@ -14,7 +14,7 @@ import {places} from '../data/prov'
            Descubre Nuevos horizontes con nosotros. Viaja, explora y vive la ciudad.
         </p>
     </div>
-    <main class="md:max-w-full  h-[500px] gap-4  mt-10 flex-row md:flex hidden"> 
+    <main class="md:max-w-full  h-[500px] gap-4  mt-10 flex-row md:flex hidden revealPlaces "> 
         
        {
         places.map(place =>(
@@ -40,7 +40,7 @@ import {places} from '../data/prov'
         ))
        }
     </main>
-     <main class="max-w-full  h-[500px] gap-4  mt-10 md:hidden grid grid-cols-2"> 
+     <main class="max-w-full  h-[500px] gap-4  mt-10 md:hidden grid grid-cols-2 revealPlaces"> 
        {
         places.map(place =>(
         <div class="rounded-2xl cursor-pointer overflow-hidden">

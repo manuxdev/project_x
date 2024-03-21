@@ -13,19 +13,19 @@ import Footer from '../components/Footer.astro'
 ---
 
 <Layout title="Proyect X">
-	<main class="py-5 xl:px-24  px-5 ">
+	<main class=" ">
 		<Header/>
 		<Hero/>
-		<!-- <section class="section-l"> -->
+		<section class="py-5 xl:px-24  px-5">
 		<Places />
-	</section>
-		<!-- <section class="section-r"> -->
-			<About2/>
+		
+		<About2/>
 		<About1/>
-		</section>
+		
 		<Services1/>
-		<!-- <Services2/> -->
-		<Feedback/>
+		
+		<Feedback client:load/>
+	</section>
 	</main>
 	<Footer/>
 </Layout>
