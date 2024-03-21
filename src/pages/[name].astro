@@ -49,9 +49,9 @@ const place = places.find(place => place.name.toLowerCase() === name)
                     
             </div>   
            
-                <div class="flex flex-col">
-                    <h4 class="text-3xl p-5 flex justify-self-center">Recorrido</h4>
-                <p id="itinerario" class="text-start px-5"></p>    
+                <div class="p-5">
+                    <h4 class="text-3xl p-5 flex justify-center">Recorrido</h4>
+                <p id="itinerario" class="text-start leading-loose px-5"></p>    
              </div>
              <div class="h-screen">
                  <PlacesCard placeName={place?.name}  client:visible/>
@@ -68,7 +68,7 @@ const place = places.find(place => place.name.toLowerCase() === name)
         console.log('Evento itineraryChange disparado', e.detail);
         const elemento = itineraryData.find((element) => element.title == e.detail);
         const displayElement = document.getElementById('itinerario');
-        const formattedDetails = elemento.details.map(detail => `- ${detail}`).join('\n');
+        const formattedDetails = elemento.details.map(detail => `✅ ${detail}`).join('\n');
         const htmlFormattedDetails = formattedDetails.replace(/\n/g, '<br>');
         displayElement.classList.add('fade-out');
         setTimeout(() => {
