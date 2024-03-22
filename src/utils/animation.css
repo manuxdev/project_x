@@ -22,7 +22,7 @@
 .revealPlaces{
     animation: revealPlaces linear both;
     animation-timeline: view();
-    animation-range: cover 10%  contain 50%;
+    animation-range: cover 10%  contain 40%;
 }
 .revealItinerary {
     animation: revealHeader 300ms ease-out forwards;
