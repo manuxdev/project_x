@@ -2,7 +2,7 @@ import {places} from '../../data/prov'
 
 const ButtonsPlaces = ({placeName}) => {
 
-  const currentIndex = places.findIndex(place => place.name.toLowerCase() === placeName.toLowerCase());
+  const currentIndex = places.findIndex(place => place.name === placeName);
   const previousPlace = currentIndex > 0 ? places[currentIndex - 1] : null;
   const nextPlace = currentIndex < places.length - 1 ? places[currentIndex + 1] : null;
 

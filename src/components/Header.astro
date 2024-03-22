@@ -1,10 +1,9 @@
 ---
+// import { languages } from '../i18n/ui';
+// import { getLangFromUrl, useTranslations } from '../i18n/utils';
+// const {currentLocale} = Astro
+// const t = useTranslations(currentLocale);
 const links = [
-    // {
-    //     name:"Home",
-    //     href:'/'
-    // },
-
     {
         name:"Places",
         href:'/#places'
@@ -43,16 +42,33 @@ const links = [
                     }
                 </li>
             </ul>
+            <!-- <ul>
+                <li>
+                    <a href={`/${lang}/home/`}>
+                      {t('nav.home')}
+                    </a>
+                </li>
+                <li>
+                    <a href={`/${lang}/about/`}>
+                      {t('nav.about')}
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/astrodotbuild">
+                      {t('nav.twitter')}
+                    </a>
+                </li>
+            </ul> -->
         </nav>
       
       <div class="flex gap-10">
-            <ul>
-                <li class=" gap-x-3 flex">
-                    <a class=" hover:font-extrabold" href="/">En</a>
-                    <a class=" hover:font-extrabold" href="/">Es</a>
-                    <a class=" hover:font-extrabold" href="/">Rs</a>
-                </li>
-            </ul>
+            <!-- <ul class=" gap-x-3 flex">
+                {Object.entries(languages).map(([lang, label]) => (
+                    <li  class=" gap-x-3 flex">
+                      <a class=" hover:font-extrabold" href={`/${lang}/`}>{label}</a>
+                    </li>
+                  ))}
+            </ul> -->
             <button class="md:hidden" id="menuToggle">
                
             </button>

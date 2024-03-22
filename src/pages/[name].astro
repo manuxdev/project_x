@@ -10,7 +10,7 @@ import Footer from '../components/Footer.astro'
 import '../utils/animation.css'
 const {name} = Astro.params
 
-const place = places.find(place => place.name.toLowerCase() === name)
+const place = places.find(place => place.name === name)
 
 
 

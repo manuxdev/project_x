@@ -19,7 +19,7 @@ import {places} from '../data/prov'
        {
         places.map(place =>(
         <div class=" md:w-[30%] w-1/4 group rounded-2xl cursor-pointer  md:hover:w-[100%] transition-all  duration-300">
-            <a href={place.name.toLowerCase()} transition:name={`portada ${place.name} box`}>
+            <a href={place.name} transition:name={`portada ${place.name} box`}>
         <img src={place.img}
             alt={place.name} 
             class="w-full h-full object-cover group-hover:scale-100 group-hover:opacity-50 transition-all duration-300 rounded-2xl"
@@ -44,7 +44,7 @@ import {places} from '../data/prov'
        {
         places.map(place =>(
         <div class="rounded-2xl cursor-pointer overflow-hidden">
-            <a href={place.name.toLowerCase()} transition:name={`portada ${place.name} box`}>
+            <a href={place.name} transition:name={`portada ${place.name} box`}>
         <img src={place.img} alt={place.name} class="w-full h-full object-cover  opacity-75 "
         transition:name={`imagen-portada ${place.name} image`}>
         <div class="w-full h-1/2 mt-[-120px] relative">
