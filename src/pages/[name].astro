@@ -27,7 +27,7 @@ const place = places.find(place => place.name.toLowerCase() === name)
 <Layout title=`${place?.name}`>
 
     <section class="h-screen" transition:name={`portada ${name} box`}>
-        <a href="/" class="rounded absolute top-0 left-0 z-50 bg-black w-8 h-8 justify-center items-center flex m-5"> {'<'} </a>
+        <a href="/#places" class="rounded absolute top-0 left-0 z-50 bg-black w-8 h-8 justify-center items-center flex m-5"> {'<'} </a>
 
             <div class="relative xl:h-[500px] sm:h-[400px] h-[250px] bg-cover justify-between flex items-center flex-col"
             style={`background-image: url(${place?.img})`}
@@ -49,9 +49,9 @@ const place = places.find(place => place.name.toLowerCase() === name)
                     
             </div>   
            
-                <div class="p-5">
+                <div class="p-5 revealItinerary aspect-[16/5]">
                     <h4 class="text-3xl p-5 flex justify-center">Recorrido</h4>
-                <p id="itinerario" class="text-start leading-loose px-5"></p>    
+                <p id="itinerario" class="text-start revealItinerary leading-loose px-5  "></p>    
              </div>
              <div class="h-screen">
                  <PlacesCard placeName={place?.name}  client:visible/>
