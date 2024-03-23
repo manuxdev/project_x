@@ -11,14 +11,14 @@ const ButtonsPlaces = ({placeName}) => {
        <button className="bg-palete-blue-dark xl:px-10 xl:py-3 py-2 px-5  rounded-lg hover:shadow-lg hover:shadow-palete-blue-light transition">Book Now</button>
        {
         previousPlace ? (
-          <a href={`/${previousPlace.name.toLocaleLowerCase()}`}>
+          <a href={`/${previousPlace.name}`}>
           <button className='border-2 border-white xl:px-10 xl:py-3 py-2 px-5  rounded-lg hover:shadow-lg hover:shadow-white transition'>{previousPlace.name}</button>
           </a>
         ): null
        }
         {
         nextPlace ? (
-          <a href={`/${nextPlace.name.toLocaleLowerCase()}`}>
+          <a href={`/${nextPlace.name}`}>
           <button  className='border-2 border-white xl:px-10 xl:py-3 py-2 px-5  rounded-lg hover:shadow-lg hover:shadow-white transition'>{nextPlace.name}</button>
           </a>
         ): null
