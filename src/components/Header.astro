@@ -1,8 +1,5 @@
 ---
-// import { languages } from '../i18n/ui';
-// import { getLangFromUrl, useTranslations } from '../i18n/utils';
-// const {currentLocale} = Astro
-// const t = useTranslations(currentLocale);
+import MenuOverlay from './react/MenuOverlay'
 const links = [
     {
         name:"Places",
@@ -62,60 +59,16 @@ const links = [
         </nav>
       
       <div class="flex gap-10">
-            <!-- <ul class=" gap-x-3 flex">
-                {Object.entries(languages).map(([lang, label]) => (
-                    <li  class=" gap-x-3 flex">
-                      <a class=" hover:font-extrabold" href={`/${lang}/`}>{label}</a>
-                    </li>
-                  ))}
-            </ul> -->
-            <button class="md:hidden" id="menuToggle">
-               
-            </button>
-            <div class="hidden w-[95%]  fixed  inset-0 mt-[8%] left-[2%] " id="mobileMenu">
+            <ul>
+                <li class=" gap-x-3 flex">
+                    <a class=" hover:font-extrabold" href="/">En</a>
+                    <a class=" hover:font-extrabold" href="/">Es</a>
+                    <a class=" hover:font-extrabold" href="/">Rs</a>
+                </li>
+            </ul>
+            
                 
-                <ul class="font-medium flex flex-col py-5 mt-4 rounded-lg bg-palete-blue-dark ">
-                    <li>
-                        {
-                            links.map(link =>(
-                            <a href={link.href} 
-                            class="block py-2 px-3 text-white md:p-0 dark:text-white text-center">
-                                {link.name}
-                            </a>
-                            ))
-                        }
-                    </li>
-                  
-                </ul>
-              </div>
+               <MenuOverlay client:visible links = {links}/>
+             
 </div>
 </header>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const menuToggle = document.getElementById('menuToggle');
-        const mobileMenu = document.getElementById('mobileMenu');
-        let isMenuOpen = false; // Variable para almacenar el estado del menú
-
-        if (menuToggle && mobileMenu) {
-            menuToggle.textContent = 'open';
-
-            menuToggle.addEventListener('click', function() {
-                isMenuOpen = !isMenuOpen; // Cambiar el estado del menú
-                mobileMenu.classList.toggle('hidden');
-                mobileMenu.classList.toggle('block');
-                // Actualizar el valor de 'value' según el estado del menú
-                menuToggle.textContent = isMenuOpen ? 'close' : 'open';
-            });
-
-            document.addEventListener('click', function(event) {
-                if (mobileMenu.contains(event.target as Node)) {
-                    isMenuOpen = false; // Cerrar el menú si el clic ocurrió dentro de él
-                    mobileMenu.classList.add('hidden');
-                    mobileMenu.classList.remove('block');
-                    menuToggle.textContent = 'open'; // Actualizar el texto del botón
-                }
-            });
-        }
-    });
-</script>
