@@ -3,6 +3,9 @@ import Facebook from './icons/Facebook.astro'
 import Instagram from './icons/Instagram.astro'
 import Whatsapp from './icons/Whatsapp.astro'
 import '../utils/animation.css'
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <section class="h-screen flex justify-start items-center bg-no-repeat bg-cover "
@@ -11,11 +14,11 @@ style={`background-image: url(/images/hero.webp)`}
 <div class="absolute sm:h-full h-[120%]  w-full bg-opacity-80 bg-blend-multiply bg-gradient-to-t from-[#07111de7] bg-[#252525ad]">
 </div>
     <div class=" xl:w-[55%] lg:w-[60%] sm:px-20 px-5 textDesapear textDesapear ">
-        <h1 class="2xl:text-7xl xl:text-6xl text-4xl font-bold sm:text-start text-center revealHero">EASY WAY TO 
-            <span class="text-palete-blue-light">EXPLORE </span>
-            THE CITY</h1>
+        <h1 class="2xl:text-7xl xl:text-6xl text-4xl font-bold sm:text-start text-center revealHero">{t('hero.h1')} 
+            <span class="text-palete-blue-light">{t('hero.span')} </span>
+            {t('hero.h1-2')}</h1>
         <p class="mt-5 sm:text-start text-center text-palete-white-blue revealHero">
-            Experimenta la confiabilidad, eficiencia y calidad que solo nuestro servicio de taxis puede ofrecer. Conducidos por profesionales altamente calificados, garantizamos un viaje seguro, puntual y cómodo. 
+            {t('hero.p')}
         </p>
         <div class="flex sm:justify-start justify-center gap-6 mt-6 revealHero">
             <button class="bg-palete-blue-dark xl:px-10 xl:py-3 py-2 px-5  rounded-lg hover:shadow-lg hover:shadow-palete-blue-light transition">Book Now</button>

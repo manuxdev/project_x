@@ -1,21 +1,27 @@
 ---
+import Logo7 from './icons/LOGOS/logo7.astro'
+import LenguajePicker from './LenguajePicker.astro'
 import MenuOverlay from './react/MenuOverlay'
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 const links = [
     {
-        name:"Places",
+        name:t('nav.places'),
         href:'/#places'
     },
     {
-        name:"About",
+        name:t('nav.about'),
         href:'/#about'
     },
     {
-        name:"Services",
+        name:t('nav.services'),
         href:'/#services'
     },
   
     {
-        name:"Feedback",
+        name:t('nav.feedback'),
         href:'/#feedback'
     },
 ]
@@ -25,13 +31,15 @@ const links = [
 
 
 <header class="flex justify-between items-center w-full absolute top-0 z-20 pt-5 sm:px-20 px-5 revealHeader">
-    <h3 class="">Hola</h3>
+    <div>
+    <Logo7 class="w-28">
+    </div>
         <nav class="md:block hidden">
             <ul class="">
                 <li class=" gap-x-10 flex">
                     {
                         links.map(link =>(
-                        <a href={link.href} 
+                        <a href={lang === 'en' ? link.href : `/${lang}${link.href}`}
                         class="hover:text-palete-blue-light transition-colors text-lg">
                             {link.name}
                         </a>
@@ -42,14 +50,8 @@ const links = [
         </nav>
       
       <div class="flex gap-10">
-            <ul>
-                <li class=" gap-x-3 flex">
-                    <a class=" hover:font-extrabold" href="/">En</a>
-                    <a class=" hover:font-extrabold" href="/">Es</a>
-                    <a class=" hover:font-extrabold" href="/">Rs</a>
-                </li>
-            </ul>
-            
+       
+            <LenguajePicker/>
                 
                <MenuOverlay client:visible links = {links}/>
              

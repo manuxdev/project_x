@@ -1,0 +1,75 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import {places} from '../../data/prov'
+import {itineraryData} from '../../data/itinerary'
+import Itinerary from '../../components/react/Itinerary';
+import PlacesCard from '../../components/react/PlacesCard'
+import ButtonsPlaces from '../../components/react/ButtonsPlaces'
+
+import Footer from '../../components/Footer.astro'
+import '../../utils/animation.css'
+const {name} = Astro.params
+
+const place = places.find(place => place.name === name)
+
+
+
+---
+
+<Layout title=`${place?.name}`>
+
+    <section class="h-screen" transition:name={`portada ${name} box`}>
+        <a href="/#places" class="rounded absolute top-0 left-0 z-50 bg-black w-8 h-8 justify-center items-center flex m-5"> {'<'} </a>
+
+            <div class="relative xl:h-[500px] sm:h-[400px] h-[250px] bg-cover justify-between flex items-center flex-col"
+            style={`background-image: url(${place?.img})`}
+            transition:name={`imagen-portada ${place?.name} image`}
+            >
+            <div class="absolute h-full w-full bg-opacity-80 bg-blend-multiply bg-gradient-to-t from-[#07111dee] bg-[#252525] z-10">
+            </div>
+                    <div class="flex flex-col gap-y-3 text-center z-20">
+                
+                       
+                        <h1 class="md:text-7xl text-4xl font-extrabold xl:mt-20 mt-5 sm:mt-10" 
+                        transition:name={`image-name ${place?.name} name`}>
+                        Visit {place?.name}</h1>
+                        <p class="md:text-base text-sm"
+                        transition:name={`image-desc ${place?.name} desc`}
+                        >{place?.desc}</p>
+                    </div>
+                    <Itinerary client:visible place={place?.name} />
+                    
+            </div>   
+           
+                <div class="p-5 revealItinerary aspect-[16/5]">
+                    <h4 class="text-3xl p-5 flex justify-center">Recorrido</h4>
+                <p id="itinerario" class="text-start revealItinerary leading-loose px-5  "></p>    
+             </div>
+             <ButtonsPlaces  placeName={place?.name}/>
+             <div class="h-screen">
+                 <PlacesCard placeName={place?.name}  client:visible/>
+                <Footer/>
+            </div>
+    </section>
+    
+</Layout>
+
+<script define:vars={{ itineraryData }}>
+
+
+    document.addEventListener('itineraryChange', (e) => {
+        console.log('Evento itineraryChange disparado', e.detail);
+        const elemento = itineraryData.find((element) => element.title == e.detail);
+        const displayElement = document.getElementById('itinerario');
+        const formattedDetails = elemento.details.map(detail => `✅ ${detail}`).join('\n');
+        const htmlFormattedDetails = formattedDetails.replace(/\n/g, '<br>');
+        displayElement.classList.add('fade-out');
+        setTimeout(() => {
+            displayElement.classList.remove('fade-out');
+            displayElement.classList.add('fade-in');
+            displayElement.innerHTML = htmlFormattedDetails; 
+            displayElement.classList.remove('fade-in');
+        }, 300);
+    });
+  
+    </script>

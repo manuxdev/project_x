@@ -1,0 +1,14 @@
+---
+import { languages } from '../i18n/ui';
+
+ const {currentLocale} = Astro
+---
+
+<ul class="flex gap-5">
+    {Object.entries(languages).map(([lang, label]) => (
+        <li class="gap-x-3 flex">
+          <a class={`${lang === currentLocale ? "font-extrabold text-palete-blue-dark": ''}hover:font-extrabold text-lg`}href={ lang === 'en' ? '/' : `/${lang}/`}>{label}</a>
+        </li>
+      ))}
+</ul>
+

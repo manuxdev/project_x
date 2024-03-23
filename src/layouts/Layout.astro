@@ -8,12 +8,15 @@ interface Props {
 }
 
 const { title } = Astro.props;
-const {currentLocale} = Astro
+// const {currentLocale} = Astro
 
+import { getLangFromUrl } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
 ---
 
 <!doctype html>
-<html lang={currentLocale}>
+<html lang={lang}>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
@@ -23,7 +26,7 @@ const {currentLocale} = Astro
 />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
-		<ViewTransitions fallback='none'/>
+		<ViewTransitions />
 	</head>
 	<body >
 		
