@@ -1,0 +1,25 @@
+{
+    "NavBar": {
+     "link1": {
+        "title": "About",
+        "path": "/about"
+      },
+      "link2": {
+        "title": "Cars",
+        "path": "/cars"
+      },
+      "link3": {
+        "title": "Places",
+        "path": "/places"
+      }
+    },
+    "Home":{
+      "Hero":{
+        "h1_strong":"DISCOVER",
+        "h1":"NEW PLACES",
+        "p":"Discover the vibrant culture and natural beauty of Cuba with our taxi service.",
+        "link_book":"Book Now",
+        "about":"About us"
+     }
+    }
+}

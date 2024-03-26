@@ -1,0 +1,36 @@
+---
+import Security from './icons/security.astro'
+import Quality from './icons/quality.astro'
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const aboutCompany = t('aboutComp');
+---
+
+<section class=" relative  flex sm:flex-row flex-col  sm:gap-24 gap-10 " id="about">
+    <div class="flex flex-col justify-center sm:w-1/2 sm:text-start text-center">
+        <h2 class="sm:text-6xl text-4xl font-bold textScroll"> {aboutCompany.h2}</h2>
+        <p class="sm:mt-20 mt-10 text-palete-white-blue"> {aboutCompany.pdesc}</p>
+        <p class="text-palete-blue-light mt-5 p-5 bg-[#202020] rounded-xl">{aboutCompany.p}</p>
+    </div>
+    <div class="flex sm:flex-row flex-col gap-5 sm:w-1/2 bg-[#202020] justify-center p-10  rounded-xl">
+        <div class="flex flex-col justify-center items-center gap-5 sm:w-1/2 text-center">
+            <img loading="lazy" src="/images/security.webp" alt="Viaje Seguro" class=" rounded-lg opacity-50">
+            <Security class = 'w-20 h-20 mt-[-60px] bg-[#202020] z-10 rounded-xl stroke-palete-blue-light'/>
+            <h3 class="font-bold text-xl">{aboutCompany.secT}</h3>
+            <p class="text-palete-white-blue">{aboutCompany.secP}</p>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-5 sm:w-1/2 text-center">
+            <img loading="lazy" src="/images/confort.webp" alt="Viaje calidad" class=" rounded-lg opacity-50">
+            <Quality class = 'w-20 h-20 mt-[-60px] bg-[#202020] z-10 rounded-xl fill-palete-blue-light'/>
+            
+            <h3 class="font-bold text-xl">{aboutCompany.conT}</h3>
+            <p class="text-palete-white-blue">{aboutCompany.conP}</p>
+        </div>
+    </div>
+</section>
+
+
+

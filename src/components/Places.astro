@@ -1,27 +1,36 @@
 ---
-import {places} from '../data/prov'
+// import {places} from '../data/prov'
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
+const elementos = t('prov');
+ const prov = elementos.places
+
+ interface Place {
+ slug: string;
+ img: string;
+ name: string;
+ desc: string;
+}
 ---
 
  
 <section class=" justify-center items-center flex w-full flex-col mb-40 md:mt-10 mt-24 " id="places">
     <div class="lg:w-[50%]  text-center ">
         <h2 class="md:text-4xl text-2xl font-bold ">
-            We Will Help You Travel And You Can Consult With Us.
+            {elementos.h2}
         </h2>
         <p class="mt-5 text-palete-white-blue">
-           Descubre Nuevos horizontes con nosotros. Viaja, explora y vive la ciudad.
+            {elementos.p}
         </p>
     </div>
-    <main class="md:max-w-full  h-[500px] gap-4  mt-10 flex-row md:flex hidden revealPlaces "> 
-        
+    <main class="md:max-w-full  h-[500px] gap-4  mt-10 flex-row md:flex hidden revealPlaces ">   
        {
-        places.map(place =>(
+        prov.map((place:Place)=>(
         <div class=" md:w-[30%] w-1/4 group rounded-2xl cursor-pointer  md:hover:w-[100%] transition-all  duration-300">
-            <a href={`${place.name}`} transition:name={`portada ${place.name} box`}>
+            <a href={`${place.slug}`} transition:name={`portada ${place.name} box`}>
         <img src={place.img}
             alt={place.name} 
             class="w-full h-full object-cover group-hover:scale-100 group-hover:opacity-50 transition-all duration-300 rounded-2xl"
@@ -44,9 +53,9 @@ const lang = getLangFromUrl(Astro.url);
     </main>
      <main class="max-w-full  h-[500px] gap-4  mt-10 md:hidden grid grid-cols-2 revealPlaces"> 
        {
-        places.map(place =>(
+        prov.map((place:Place) =>(
         <div class="rounded-2xl cursor-pointer overflow-hidden">
-            <a href={`${place.name}`} transition:name={`portada ${place.name} box`}>
+            <a href={`${place.slug}`} transition:name={`portada ${place.name} box`}>
         <img src={place.img} alt={place.name} class="w-full h-full object-cover  opacity-75 "
         transition:name={`imagen-portada ${place.name} image`}>
         <div class="w-full h-1/2 mt-[-120px] relative">

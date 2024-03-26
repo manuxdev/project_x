@@ -1,4 +1,6 @@
 ---
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
 const feedback = [
     {
         name:'El peruano1',
@@ -32,13 +34,18 @@ const feedback = [
         star:4.5
     },
 ]
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const feedBack = t('feedback');
 ---
 <!-- Slider main container -->
 <section class="my-20">
   <div class="w-full flex justify-center">
   <div class="text-center  lg:w-[60%]">
-  <h2 class=" text-5xl font-bold">Lo que dicen los clientes sobre nuestros tours</h2>
-  <p class="mt-2 text-palete-white-blue">Descubra lo que nuestros clientes tienen que decir sobre nuestros tours, mientras comparten sus experiencias inolvidables y críticas favorables.</p>
+  <h2 class=" text-5xl font-bold">{feedBack.h2}</h2>
+  <p class="mt-2 text-palete-white-blue">{feedBack.p}</p>
 </div>
 </div>
   <div class="swiper h-[300px] px-5 " id="feedback">

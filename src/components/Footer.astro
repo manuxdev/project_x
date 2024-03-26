@@ -4,40 +4,46 @@ import Instagram from './icons/Instagram.astro'
 import Whatsapp from './icons/Whatsapp.astro'
 import Logo7 from './icons/LOGOS/logo7.astro'
 
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const elementos = t('nav');
+
+
 const links = [
     {
-        name:"Home",
+        name:elementos.home,
         href:'/'
     },
     {
-        name:"Places",
+        name:elementos.places,
         href:'/#places'
     },
  
     {
-        name:"Matanzas",
+        name:elementos.matanzas,
         href:'/Matanzas'
     },
- 
     {
-        name:"Services",
+        name:elementos.services,
         href:'/#services'
     },
     {
-        name:"Pinar del Río",
+        name:elementos.pinar,
         href:'/Pinar del Río'
     },
     {
-        name:"Región Central",
+        name:elementos.central,
         href:'/Región Central'
     },
     {
-        name:"About",
+        name:elementos.about,
         href:'/#about'
     },
 
     {
-        name:"La Habana",
+        name:elementos.habana,
         href:'/La Habana'
     },
    
