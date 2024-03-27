@@ -2,7 +2,7 @@
 import Logo7 from './icons/LOGOS/logo7.astro'
 import LenguajePicker from './LenguajePicker.astro'
 import MenuOverlay from './react/MenuOverlay'
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import { getLangFromUrl, useTranslations } from '../i18n/utils.js';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);

@@ -4,7 +4,7 @@ import Instagram from './icons/Instagram.astro'
 import Whatsapp from './icons/Whatsapp.astro'
 import Logo7 from './icons/LOGOS/logo7.astro'
 
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import { getLangFromUrl, useTranslations } from '../i18n/utils.js';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);

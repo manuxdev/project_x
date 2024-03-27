@@ -2,7 +2,7 @@
 import Destination from './icons/destination.astro'
 import Price from './icons/price.astro'
 import Calendar from './icons/calendar.astro'
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import { getLangFromUrl, useTranslations } from '../i18n/utils.js';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);

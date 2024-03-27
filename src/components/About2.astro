@@ -1,16 +1,23 @@
 ---
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import { getLangFromUrl, useTranslations } from '../i18n/utils.js';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-const elementos = t('about2');
+const about2 = t('about2');
+console.log(about2)
+interface Elemento {
+ num: number; // Assuming 'num' is a number, adjust the type as necessary
+ title: string; // Assuming 'title' is a string, adjust the type as necessary
+ text: string; // Assuming 'text' is a string, adjust the type as necessary
+ active: boolean; // Assuming 'active' is a boolean, adjust the type as necessary
+}
 ---
 
 
 <section class="md:h-screen h-auto flex-col flex items-center lg:mt-32 mt-20 ">
 <div class=" text-center ">
     <h2 class="md:text-5xl text-3xl font-bold textScroll">  
-       {elementos.h2}
+       {about2.h2}
     </h2>
 </div>
 <div class="flex flex-row items-start md:justify-around w-full mt-14 gap-5">
@@ -33,14 +40,14 @@ const elementos = t('about2');
        
         </div>
     <div class="flex flex-col gap-12 md:w-1/2">
-        {Object.values(elementos.elementos).map(({num, title, text, active}) => (
-        <div class={`flex gap-5 ${active ? 'text-palete-blue-light' : 'text-white'}`}>
+        {about2.elementos.map((elemento: Elemento) => (
+        <div class={`flex gap-5 ${elemento.active ? 'text-palete-blue-light' : 'text-white'}`}>
           <div>
-            <div class={`bg-[#2D2C2C] w-12 h-12 flex items-center justify-center rounded-lg font-bold`}>{num}</div>
+            <div class={`bg-[#2D2C2C] w-12 h-12 flex items-center justify-center rounded-lg font-bold`}>{elemento.num}</div>
           </div>
           <div>
-            <h3 class={`text-xl font-extrabold ${active ? 'text-palete-blue-light' : 'text-white'}`}>{title}</h3>
-            <p class="text-palete-white-blue">{text}</p>
+            <h3 class={`text-xl font-extrabold ${elemento.active ? 'text-palete-blue-light' : 'text-white'}`}>{elemento.title}</h3>
+            <p class="text-palete-white-blue">{elemento.text}</p>
           </div>
         </div>
       ))}

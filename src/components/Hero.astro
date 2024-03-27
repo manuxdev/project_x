@@ -3,7 +3,7 @@ import Facebook from './icons/Facebook.astro'
 import Instagram from './icons/Instagram.astro'
 import Whatsapp from './icons/Whatsapp.astro'
 import '../utils/animation.css'
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import { getLangFromUrl, useTranslations } from '../i18n/utils.js';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 

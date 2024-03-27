@@ -2,7 +2,7 @@
 // import { placesData } from '../../data/places';
 import { useEffect, useState } from "react";
 import '../../utils/animation.css'
-import {  useTranslations } from '../../i18n/utils';
+import {  useTranslations } from '../../i18n/utils.js';
 const PlacesCard = ({placeName, lang}) => {
 
 const t = useTranslations(lang);

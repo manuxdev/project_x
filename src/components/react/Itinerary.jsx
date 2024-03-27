@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import ItineraryTag from "./ItineraryTag";
-import {  useTranslations } from '../../i18n/utils';
+import {  useTranslations } from '../../i18n/utils.js';
 
 function Itinerary({place, lang}) {
 const t = useTranslations(lang);

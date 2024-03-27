@@ -76,26 +76,26 @@ export const languages = {
 
         about2:{
             h2:'Live The Best Experience With Our Work Team.',
-             elementos:{
-              el1: {
+             elementos:[
+             {
                 num: '1',
                 title: 'Travel To Your Place',
                 text: 'Start the booking by sending a message via WhatsApp with your details and preferences.',
                 active: false
                 },
-                el2: {
+                {
                 num: '2',
                 title: 'Find Your Travel Best Place',
                 text: 'Collaborate with our team to personalize your trip according to your needs.',
                 active: false
                 },
-                el3: {
+               {
                 num: '3',
                 title: 'Enjoy The Journey With Pleasure',
                 text: 'Experience your journey with our best drivers and guides.',
                 active: true
                 }
-                    }
+              ]
         },
         services: {
                     h2: "With us you will find the best service on the island.",
@@ -1112,26 +1112,26 @@ export const languages = {
         },
         about2:{
               h2:'Vive La Mejor Experiencia Con Nuestro Equipo de Trabajo.',
-              elementos:{
-                el1: {
+              elementos:[
+                 {
                   num: '1',
                   title: 'Viaja a Tu Lugar',
                   text: 'Inicia la reserva enviando un mensaje a través de WhatsApp con tus detalles y preferencias.',
                   activo: false
                   },
-                  el2: {
+                 {
                   num: '2',
                   title: 'Encuentre Su Mejor Opción de Viaje',
                   text: 'Colabora con nuestro equipo para personalizar tu viaje según tus necesidades.',
                   activo: false
                   },
-                  el3: {
+                 {
                   num: '3',
                   title: 'Disfruta del Viaje con Placer',
                   text: 'Vive tu viaje con nuestros mejores conductores y guías.',
                   activo: true
                   }
-                     }
+                ]
         },
         services: {
                   h2: "Con nosotros encontrarás el mejor servicio en la isla.",
@@ -2148,26 +2148,26 @@ export const languages = {
            },
       about2:{
             h2:'Получайте лучший опыт работы с нашей рабочей командой.',
-            elementos:{
-              el1: {
+            elementos:[
+              {
                 num: '1',
                 title: 'Путешествие к вам',
                 text: 'Начните бронирование, отправив сообщение через WhatsApp со своими данными и предпочтениями.',
                 активный: false
               },
-              el2: {
+               {
                 num: '2',
                 title: 'Найдите свое лучшее место для путешествия',
                 text: 'Сотрудничайте с нашей командой, чтобы настроить ваше путешествие в соответствии с вашими потребностями.',
                 активный: false
               },
-              el3: {
+              {
                 num: '3',
                 title: 'Насладитесь путешествием с удовольствием',
                 text: 'Осуществите свое путешествие с нашими лучшими водителями и гидами.',
                 активный: true
               }
-                   }
+            ]
         },
       services: {
               h2: "С нами вы найдете лучшее обслуживание на острове.",
