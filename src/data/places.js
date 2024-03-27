@@ -6,7 +6,7 @@ export const placesData = [
         "The Castle in the Sky offers a breathtaking panoramic view of Pinar Del Río. Built in the 19th century as a lookout post, this historic site has been restored for visitors to enjoy its rich history.",
       image: "/images/places/Castillo_Cielo.webp",
       tag: "Pinar Del Río",
-      itinerary: ["Tour Viñales - Soroa", "Viñales - Soroa Tour"],
+      itinerary: ["Tour Viñales - Soroa", "Тур Виньялес - Сороа", "Viñales - Soroa Tour"],
     },
     {
       id: 2,
@@ -19,10 +19,10 @@ export const placesData = [
       itinerary: [
         "Excursión de un día a Varadero desde La Habana",
         "One-day excursion to Varadero from Havana",
-        "Tour de un día en La Habana",
-        "Tour al Atardecer en La Habana",
-        "Tour por La Habana + Tropicana",
-        "Tour por La Habana + Cañonazo",
+        "Tour de un día en La Habana",  "Однодневный тур по Гаване",
+        "Tour al Atardecer en La Habana",  "Тур на закате в Гаване",
+        "Tour por La Habana + Tropicana", "Тур по Гаване + Тропикана",
+        "Tour por La Habana + Cañonazo","Тур по Гаване + Салют из пушки",
         "One day tour in Havana",
         "Sunset Tour in Havana",
         "Havana Tour + Cannon Shot",
@@ -37,7 +37,7 @@ export const placesData = [
         "The Orchid Garden in Pinar Del Río is a floral paradise established in the 20th century. With an impressive collection of native and international orchids, this place offers a unique experience for botanical enthusiasts.",
       image: "/images/places/Orquideario.webp",
       tag: "Pinar Del Río",
-      itinerary: ["Tour Viñales - Soroa", "Viñales - Soroa Tour"],
+      itinerary: ["Tour Viñales - Soroa", "Тур Виньялес - Сороа", "Viñales - Soroa Tour"],
     },
     {
       id: 6,
@@ -46,7 +46,7 @@ export const placesData = [
         "The Indian's Cave, discovered in the 19th century, is a fascinating cave system with unique geological formations. Over the years, it has been the scene of archaeological discoveries revealing the presence of ancient cultures in the region.",
       image: "/images/places/nuevos_places/Cueva_Indio.webp",
       tag: "Pinar Del Río",
-      itinerary: ["Tour Viñales - Soroa", "Viñales - Soroa Tour"],
+      itinerary: ["Tour Viñales - Soroa", "Тур Виньялес - Сороа", "Viñales - Soroa Tour"],
     },
     {
       id: 7,
@@ -57,10 +57,10 @@ export const placesData = [
       tag: "Havana",
   
       itinerary: [
-        "Tour por La Habana + Tropicana",
-        "Tour por La Habana + Cañonazo",
-        "Tour de un día en La Habana",
-        "Tour al Atardecer en La Habana",
+        "Tour por La Habana + Tropicana", "Тур по Гаване + Тропикана",
+        "Tour por La Habana + Cañonazo","Тур по Гаване + Салют из пушки",
+        "Tour de un día en La Habana",  "Однодневный тур по Гаване",
+        "Tour al Atardecer en La Habana",  "Тур на закате в Гаване",
         "One day tour in Havana",
         "Sunset Tour in Havana",
         "Havana Tour + Cannon Shot",
@@ -78,10 +78,10 @@ export const placesData = [
       tag: ["Havana", "La Habana"],
   
       itinerary: [
-        "Tour por La Habana + Tropicana",
-        "Tour por La Habana + Cañonazo",
-        "Tour de un día en La Habana",
-        "Tour al Atardecer en La Habana",
+        "Tour por La Habana + Tropicana", "Тур по Гаване + Тропикана",
+        "Tour por La Habana + Cañonazo","Тур по Гаване + Салют из пушки",
+        "Tour de un día en La Habana",  "Однодневный тур по Гаване",
+        "Tour al Atardecer en La Habana",  "Тур на закате в Гаване",
         "One day tour in Havana",
         "Sunset Tour in Havana",
         "Havana Tour + Cannon Shot",
@@ -99,10 +99,10 @@ export const placesData = [
       tag: ["Havana", "La Habana"],
   
       itinerary: [
-        "Tour por La Habana + Tropicana",
-        "Tour por La Habana + Cañonazo",
-        "Tour de un día en La Habana",
-        "Tour al Atardecer en La Habana",
+        "Tour por La Habana + Tropicana", "Тур по Гаване + Тропикана",
+        "Tour por La Habana + Cañonazo","Тур по Гаване + Салют из пушки",
+        "Tour de un día en La Habana",  "Однодневный тур по Гаване",
+        "Tour al Atardecer en La Habana",  "Тур на закате в Гаване",
         "One day tour in Havana",
         "Sunset Tour in Havana",
         "Havana Tour + Cannon Shot",
@@ -120,10 +120,10 @@ export const placesData = [
       tag: ["Havana", "La Habana"],
   
       itinerary: [
-        "Tour de un día en La Habana",
-        "Tour al Atardecer en La Habana",
-        "Tour por La Habana + Tropicana",
-        "Tour por La Habana + Cañonazo",
+        "Tour de un día en La Habana",  "Однодневный тур по Гаване",
+        "Tour al Atardecer en La Habana",  "Тур на закате в Гаване",
+        "Tour por La Habana + Tropicana", "Тур по Гаване + Тропикана",
+        "Tour por La Habana + Cañonazo","Тур по Гаване + Салют из пушки",
         "One day tour in Havana",
         "Sunset Tour in Havana",
         "Havana Tour + Cannon Shot",
@@ -141,10 +141,10 @@ export const placesData = [
       tag: ["Havana", "La Habana"],
   
       itinerary: [
-        "Tour por La Habana + Tropicana",
-        "Tour por La Habana + Cañonazo",
-        "Tour de un día en La Habana",
-        "Tour al Atardecer en La Habana",
+        "Tour por La Habana + Tropicana", "Тур по Гаване + Тропикана",
+        "Tour por La Habana + Cañonazo","Тур по Гаване + Салют из пушки",
+        "Tour de un día en La Habana",  "Однодневный тур по Гаване",
+        "Tour al Atardecer en La Habana",  "Тур на закате в Гаване",
         "One day tour in Havana",
         "Sunset Tour in Havana",
         "Havana Tour + Cannon Shot",
@@ -162,10 +162,10 @@ export const placesData = [
       tag: ["Havana", "La Habana"],
   
       itinerary: [
-        "Tour de un día en La Habana",
-        "Tour al Atardecer en La Habana",
-        "Tour por La Habana + Tropicana",
-        "Tour por La Habana + Cañonazo",
+        "Tour de un día en La Habana",  "Однодневный тур по Гаване",
+        "Tour al Atardecer en La Habana",  "Тур на закате в Гаване",
+        "Tour por La Habana + Tropicana", "Тур по Гаване + Тропикана",
+        "Tour por La Habana + Cañonazo","Тур по Гаване + Салют из пушки",
         "One day tour in Havana",
         "Sunset Tour in Havana",
         "Havana Tour + Cannon Shot",
@@ -186,8 +186,8 @@ export const placesData = [
         "Jeep Safari",
         "Excursión de un día a Varadero desde La Habana",
         "One-day excursion to Varadero from Havana",
-        "City Tour Varadero for Hour",
-        "Recorrido por la ciudad de Varadero por hora",
+        "City Tour Varadero for Hour", "Однодневная экскурсия в Варадеро из Гаваны",
+        "Recorrido por la ciudad de Varadero por hora", "Тур по городу Варадеро по часам",
       ],
     },
     {
@@ -202,7 +202,7 @@ export const placesData = [
         "Excursion de un día a Varadero desde La Habana",
         "Tour por Matanzas",
         "One-day excursion to Varadero from Havana",
-        "Matanzas Tour",
+        "Matanzas Tour", "Тур по Матансасу",
       ],
     },
     {
@@ -213,7 +213,7 @@ export const placesData = [
       image: "/images/places/Bellamar_Cave.webp",
       tag: "Matanzas",
   
-      itinerary: ["Matanzas Tour", "Tour por Matanzas"],
+      itinerary: ["Matanzas Tour", "Тур по Матансасу", "Tour por Matanzas"],
     },
     {
       id: 16,
@@ -224,11 +224,11 @@ export const placesData = [
       tag: "Matanzas",
   
       itinerary: [
-        "Jeppe Safari",
+        
         "Excursión de un día a Varadero desde La Habana",
         "One-day excursion to Varadero from Havana",
-        "City Tour Varadero for Hour",
-        "Recorrido por la ciudad de Varadero por hora",
+        "City Tour Varadero for Hour", "Однодневная экскурсия в Варадеро из Гаваны",
+        "Recorrido por la ciudad de Varadero por hora", "Тур по городу Варадеро по часам",
       ],
     },
     {
@@ -253,7 +253,7 @@ export const placesData = [
       image: "/images/places/Guama.webp",
       tag: "Matanzas",
   
-      itinerary: ["Tour por la Ciénaga de Zapata", "Zapata Swamp Tour"],
+      itinerary: ["Tour por la Ciénaga de Zapata", "Zapata Swamp Tour","Экскурсия в Циенага-де-Сапата"],
     },
     {
       id: 19,
@@ -264,11 +264,11 @@ export const placesData = [
       tag: "Matanzas",
   
       itinerary: [
-        "Jeppe Safari",
+        
         "Excursión de un día a Varadero desde La Habana",
         "One-day excursion to Varadero from Havana",
-        "City Tour Varadero for Hour",
-        "Recorrido por la ciudad de Varadero por hora",
+        "City Tour Varadero for Hour", "Однодневная экскурсия в Варадеро из Гаваны",
+        "Recorrido por la ciudad de Varadero por hora", "Тур по городу Варадеро по часам",
       ],
     },
     {
@@ -278,7 +278,7 @@ export const placesData = [
         "Soroa, known as the 'rainbow of Cuba,' is famous for its botanical garden and waterfalls. Founded in the 19th century, the area is a natural paradise that has attracted flora and fauna enthusiasts from around the world for generations.",
       image: "/images/places/Pinar_Cascada.webp",
       tag: "Pinar Del Río",
-      itinerary: ["Tour Viñales - Soroa", "Viñales - Soroa Tour"],
+      itinerary: ["Tour Viñales - Soroa", "Тур Виньялес - Сороа", "Viñales - Soroa Tour"],
     },
   
     {
@@ -289,7 +289,7 @@ export const placesData = [
       image: "/images/places/Museo_Farmaceutico.webp",
       tag: "Matanzas",
   
-      itinerary: ["Tour por Matanzas", "Matanzas Tour"],
+      itinerary: ["Tour por Matanzas", "Matanzas Tour", "Тур по Матансасу"],
     },
     {
       id: 22,
@@ -303,7 +303,7 @@ export const placesData = [
         "Excursion de un día a Varadero desde La Habana",
         "Tour por Matanzas",
         "One-day excursion to Varadero from Havana",
-        "Matanzas Tour",
+        "Matanzas Tour", "Тур по Матансасу",
       ],
     },
     {
@@ -315,11 +315,11 @@ export const placesData = [
       tag: "Matanzas",
   
       itinerary: [
-        "Jeppe Safari",
+        
         "Excursión de un día a Varadero desde La Habana",
         "One-day excursion to Varadero from Havana",
-        "City Tour Varadero for Hour",
-        "Recorrido por la ciudad de Varadero por hora",
+        "City Tour Varadero for Hour", "Однодневная экскурсия в Варадеро из Гаваны",
+        "Recorrido por la ciudad de Varadero por hora", "Тур по городу Варадеро по часам",
       ],
     },
     {
@@ -334,15 +334,6 @@ export const placesData = [
         "Excursión de un día a Varadero desde La Habana",
         "One-day excursion to Varadero from Havana",
       ],
-    },
-    {
-      id: 25,
-      title: "Cañonazo en Castillo Morro Cabaña",
-      description:
-        "Experience the historical Cañonazo ceremony at Castillo Morro Cabaña, a nightly ritual that dates back centuries, offering a glimpse into Cuba's rich past.",
-      image: "/images/places/nuevos_places/Cañonazo.webp",
-      tag: ["Havana", "La Habana"],
-      itinerary: ["Tour por La Habana + Cañonazo", "Havana Tour + Cannon Shot"],
     },
     {
       id: 26,
@@ -365,10 +356,10 @@ export const placesData = [
       tag: ["Havana", "La Habana"],
   
       itinerary: [
-        "Tour por La Habana + Tropicana",
-        "Tour por La Habana + Cañonazo",
-        "Tour de un día en La Habana",
-        "Tour al Atardecer en La Habana",
+        "Tour por La Habana + Tropicana", "Тур по Гаване + Тропикана",
+        "Tour por La Habana + Cañonazo","Тур по Гаване + Салют из пушки",
+        "Tour de un día en La Habana",  "Однодневный тур по Гаване",
+        "Tour al Atardecer en La Habana",  "Тур на закате в Гаване",
         "One day tour in Havana",
         "Sunset Tour in Havana",
         "Havana Tour + Cannon Shot",
@@ -386,7 +377,7 @@ export const placesData = [
       tag: ["Havana", "La Habana"],
   
       itinerary: [
-        "Tour de un día en La Habana",
+        "Tour de un día en La Habana",  "Однодневный тур по Гаване",
         "One day tour in Havana",
         "City Tour Havana for Hour",
         "Tour de Ciudad en La Habana por Hora",
@@ -400,8 +391,8 @@ export const placesData = [
       image: "/images/places/nuevos_places/Cienfuegos.webp",
       tag: ["Central Region", "Región Central"],
       itinerary: [
-        "Tour Trinidad - Cienfuegos (Opcional Nicho)",
-        "Tour de Tres Ciudades: Trinidad - Cienfuegos - Santa Clara","Tour Trinidad - Cienfuegos (Nicho opcional)","Tour Tres ciudades Trinidad - Cienfuegos - Santa Clara",
+        "Tour Trinidad - Cienfuegos (Opcional Nicho)",  "Тур по Тринидаду - Сьенфуэгос (опционально Ничо)",
+        "Tour de Tres Ciudades: Trinidad - Cienfuegos - Santa Clara", "Тур по трем городам Тринидад - Сьенфуэгос - Санта-Клара","Tour Trinidad - Cienfuegos (Nicho opcional)","Tour Tres ciudades Trinidad - Cienfuegos - Santa Clara",
         "Trinidad - Cienfuegos Tour (Optional Nicho)",
         "Three Cities Tour Trinidad - Cienfuegos - Santa Clara",
       ],
@@ -414,7 +405,7 @@ export const placesData = [
       image: "/images/places/nuevos_places/Criadero_Cocodrilos.webp",
       tag: "Matanzas",
   
-      itinerary: ["Tour por la Ciénaga de Zapata", "Zapata Swamp Tour"],
+      itinerary: ["Tour por la Ciénaga de Zapata", "Zapata Swamp Tour","Экскурсия в Циенага-де-Сапата"],
     },
     {
       id: 32,
@@ -425,8 +416,8 @@ export const placesData = [
       tag: ["Central Region", "Región Central"],
   
       itinerary: [
-        "Tour Trinidad - Cienfuegos (Opcional Nicho)",
-        "Tour de Tres Ciudades: Trinidad - Cienfuegos - Santa Clara","Tour Trinidad - Cienfuegos (Nicho opcional)","Tour Tres ciudades Trinidad - Cienfuegos - Santa Clara",
+        "Tour Trinidad - Cienfuegos (Opcional Nicho)",  "Тур по Тринидаду - Сьенфуэгос (опционально Ничо)",
+        "Tour de Tres Ciudades: Trinidad - Cienfuegos - Santa Clara", "Тур по трем городам Тринидад - Сьенфуэгос - Санта-Клара","Tour Trinidad - Cienfuegos (Nicho opcional)","Tour Tres ciudades Trinidad - Cienfuegos - Santa Clara",
         "Trinidad - Cienfuegos Tour (Optional Nicho)",
         "Three Cities Tour Trinidad - Cienfuegos - Santa Clara",
       ],
@@ -442,8 +433,8 @@ export const placesData = [
       itinerary: [
         "Excursión de un día a Varadero desde La Habana",
         "One-day excursion to Varadero from Havana",
-        "City Tour Varadero for Hour",
-        "Recorrido por la ciudad de Varadero por hora",
+        "City Tour Varadero for Hour", "Однодневная экскурсия в Варадеро из Гаваны",
+        "Recorrido por la ciudad de Varadero por hora", "Тур по городу Варадеро по часам",
       ],
     },
     {
@@ -453,7 +444,7 @@ export const placesData = [
         "Climb to the top of Monserrate for breathtaking views of the surrounding landscapes. This vantage point offers a unique perspective of the town and its picturesque surroundings.",
       image: "/images/places/nuevos_places/Monserrate.webp",
       tag: "Matanzas",
-      itinerary: ["Tour por Matanzas", "Matanzas Tour"],
+      itinerary: ["Tour por Matanzas", "Matanzas Tour", "Тур по Матансасу"],
     },
     {
       id: 35,
@@ -464,7 +455,7 @@ export const placesData = [
       tag: ["Central Region", "Región Central"],
       itinerary: [
         
-        "Tour de Tres Ciudades: Trinidad - Cienfuegos - Santa Clara","Tour Trinidad - Cienfuegos (Nicho opcional)","Tour Tres ciudades Trinidad - Cienfuegos - Santa Clara",
+        "Tour de Tres Ciudades: Trinidad - Cienfuegos - Santa Clara", "Тур по трем городам Тринидад - Сьенфуэгос - Санта-Клара","Tour Trinidad - Cienfuegos (Nicho opcional)","Tour Tres ciudades Trinidad - Cienfuegos - Santa Clara",
         "Three Cities Tour Trinidad - Cienfuegos - Santa Clara",
       ],
     },
@@ -476,7 +467,7 @@ export const placesData = [
       image: "/images/places/nuevos_places/Monumento_Tren_Blindado.webp",
       tag: ["Central Region", "Región Central"],
       itinerary: [
-        "Tour de Tres Ciudades: Trinidad - Cienfuegos - Santa Clara","Tour Trinidad - Cienfuegos (Nicho opcional)","Tour Tres ciudades Trinidad - Cienfuegos - Santa Clara",
+        "Tour de Tres Ciudades: Trinidad - Cienfuegos - Santa Clara", "Тур по трем городам Тринидад - Сьенфуэгос - Санта-Клара","Tour Trinidad - Cienfuegos (Nicho opcional)","Tour Tres ciudades Trinidad - Cienfuegos - Santa Clara",
         "Three Cities Tour Trinidad - Cienfuegos - Santa Clara",
       ],
     },
@@ -487,7 +478,7 @@ export const placesData = [
         "Marvel at the Mural de la Prehistoria, a colossal outdoor mural depicting the evolutionary history of life on Earth. Explore the vibrant artwork set against a natural backdrop.",
       image: "/images/places/nuevos_places/Mural_Prehistoria.webp",
       tag: "Pinar Del Río",
-      itinerary: ["Tour Viñales - Soroa", "Viñales - Soroa Tour"],
+      itinerary: ["Tour Viñales - Soroa", "Тур Виньялес - Сороа", "Viñales - Soroa Tour"],
     },
     {
       id: 38,
@@ -509,8 +500,8 @@ export const placesData = [
       image: "/images/places/nuevos_places/Museo_Ron.webp",
       tag: ["Havana", "La Habana"],
       itinerary: [
-        "Tour de un día en La Habana",
-        "Tour al Atardecer en La Habana",
+        "Tour de un día en La Habana",  "Однодневный тур по Гаване",
+        "Tour al Atardecer en La Habana",  "Тур на закате в Гаване",
   
         "One day tour in Havana",
         "Sunset Tour in Havana",
@@ -527,10 +518,10 @@ export const placesData = [
       tag: ["Havana", "La Habana"],
   
       itinerary: [
-        "Tour por La Habana + Tropicana",
-        "Tour por La Habana + Cañonazo",
-        "Tour de un día en La Habana",
-        "Tour al Atardecer en La Habana",
+        "Tour por La Habana + Tropicana", "Тур по Гаване + Тропикана",
+        "Tour por La Habana + Cañonazo","Тур по Гаване + Салют из пушки",
+        "Tour de un día en La Habana",  "Однодневный тур по Гаване",
+        "Tour al Atardecer en La Habana",  "Тур на закате в Гаване",
         "One day tour in Havana",
         "Sunset Tour in Havana",
         "Havana Tour + Cannon Shot",
@@ -549,8 +540,8 @@ export const placesData = [
       tag: ["Central Region", "Región Central"],
   
       itinerary: [
-        "Tour Trinidad - Cienfuegos (Opcional Nicho)",
-        "Tour de Tres Ciudades: Trinidad - Cienfuegos - Santa Clara","Tour Trinidad - Cienfuegos (Nicho opcional)","Tour Tres ciudades Trinidad - Cienfuegos - Santa Clara",
+        "Tour Trinidad - Cienfuegos (Opcional Nicho)",  "Тур по Тринидаду - Сьенфуэгос (опционально Ничо)",
+        "Tour de Tres Ciudades: Trinidad - Cienfuegos - Santa Clara", "Тур по трем городам Тринидад - Сьенфуэгос - Санта-Клара","Tour Trinidad - Cienfuegos (Nicho opcional)","Tour Tres ciudades Trinidad - Cienfuegos - Santa Clara",
         "Trinidad - Cienfuegos Tour (Optional Nicho)",
         "Three Cities Tour Trinidad - Cienfuegos - Santa Clara",
       ],
@@ -562,7 +553,7 @@ export const placesData = [
         "Relax on the pristine shores of Playa Larga, a beautiful beach known for its tranquility and natural beauty. Enjoy sunbathing, swimming, and a peaceful escape by the sea.",
       image: "/images/places/nuevos_places/Playa_Larga.webp",
       tag: "Matanzas",
-      itinerary: ["Tour por la Ciénaga de Zapata", "Zapata Swamp Tour"],
+      itinerary: ["Tour por la Ciénaga de Zapata", "Zapata Swamp Tour","Экскурсия в Циенага-де-Сапата"],
     },
     {
       id: 43,
@@ -572,10 +563,10 @@ export const placesData = [
       image: "/images/places/nuevos_places/Plaza_Armas.webp",
       tag: ["Havana", "La Habana"],
       itinerary: [
-        "Tour de un día en La Habana",
-        "Tour al Atardecer en La Habana",
-        "Tour por La Habana + Tropicana",
-        "Tour por La Habana + Cañonazo",
+        "Tour de un día en La Habana",  "Однодневный тур по Гаване",
+        "Tour al Atardecer en La Habana",  "Тур на закате в Гаване",
+        "Tour por La Habana + Tropicana", "Тур по Гаване + Тропикана",
+        "Tour por La Habana + Cañonazo","Тур по Гаване + Салют из пушки",
         "One day tour in Havana",
         "Sunset Tour in Havana",
         "Havana Tour + Cannon Shot",
@@ -605,8 +596,8 @@ export const placesData = [
       tag: ["Central Region", "Región Central"],
   
       itinerary: [
-        "Tour Trinidad - Cienfuegos (Opcional Nicho)",
-        "Tour de Tres Ciudades: Trinidad - Cienfuegos - Santa Clara","Tour Trinidad - Cienfuegos (Nicho opcional)","Tour Tres ciudades Trinidad - Cienfuegos - Santa Clara",
+        "Tour Trinidad - Cienfuegos (Opcional Nicho)",  "Тур по Тринидаду - Сьенфуэгос (опционально Ничо)",
+        "Tour de Tres Ciudades: Trinidad - Cienfuegos - Santa Clara", "Тур по трем городам Тринидад - Сьенфуэгос - Санта-Клара","Tour Trinidad - Cienfuegos (Nicho opcional)","Tour Tres ciudades Trinidad - Cienfuegos - Santa Clara",
         "Trinidad - Cienfuegos Tour (Optional Nicho)",
         "Three Cities Tour Trinidad - Cienfuegos - Santa Clara",
       ],
@@ -619,10 +610,10 @@ export const placesData = [
       image: "/images/places/nuevos_places/San_Francisco.webp",
       tag: ["Havana", "La Habana"],
       itinerary: [
-        "Tour de un día en La Habana",
-        "Tour al Atardecer en La Habana",
-        "Tour por La Habana + Tropicana",
-        "Tour por La Habana + Cañonazo",
+        "Tour de un día en La Habana",  "Однодневный тур по Гаване",
+        "Tour al Atardecer en La Habana",  "Тур на закате в Гаване",
+        "Tour por La Habana + Tropicana", "Тур по Гаване + Тропикана",
+        "Tour por La Habana + Cañonazo","Тур по Гаване + Салют из пушки",
         "One day tour in Havana",
         "Sunset Tour in Havana",
         "Havana Tour + Cannon Shot",
@@ -638,7 +629,7 @@ export const placesData = [
         "Explore the imposing Fortaleza San Severino, a fortress with a storied history. Learn about its role in protecting the town and enjoy panoramic views of the surrounding landscapes.",
       image: "/images/places/nuevos_places/San_Seberino.webp",
       tag: "Matanzas",
-      itinerary: ["Tour por Matanzas", "Matanzas Tour"],
+      itinerary: ["Tour por Matanzas", "Matanzas Tour", "Тур по Матансасу"],
     },
     {
       id: 48,
@@ -649,7 +640,7 @@ export const placesData = [
       tag: ["Central Region", "Región Central"],
   
       itinerary: [
-        "Tour de Tres Ciudades: Trinidad - Cienfuegos - Santa Clara","Tour Trinidad - Cienfuegos (Nicho opcional)","Tour Tres ciudades Trinidad - Cienfuegos - Santa Clara",
+        "Tour de Tres Ciudades: Trinidad - Cienfuegos - Santa Clara", "Тур по трем городам Тринидад - Сьенфуэгос - Санта-Клара","Tour Trinidad - Cienfuegos (Nicho opcional)","Tour Tres ciudades Trinidad - Cienfuegos - Santa Clara",
         "Three Cities Tour Trinidad - Cienfuegos - Santa Clara",
       ],
     },
@@ -662,10 +653,10 @@ export const placesData = [
       tag: ["Havana", "La Habana"],
   
       itinerary: [
-        "Tour de un día en La Habana",
-        "Tour al Atardecer en La Habana",
-        "Tour por La Habana + Tropicana",
-        "Tour por La Habana + Cañonazo",
+        "Tour de un día en La Habana",  "Однодневный тур по Гаване",
+        "Tour al Atardecer en La Habana",  "Тур на закате в Гаване",
+        "Tour por La Habana + Tropicana", "Тур по Гаване + Тропикана",
+        "Tour por La Habana + Cañonazo","Тур по Гаване + Салют из пушки",
         "One day tour in Havana",
         "Sunset Tour in Havana",
         "Havana Tour + Cannon Shot",
@@ -683,8 +674,8 @@ export const placesData = [
       tag: ["Central Region", "Región Central"],
   
       itinerary: [
-        "Tour Trinidad - Cienfuegos (Opcional Nicho)",
-        "Tour de Tres Ciudades: Trinidad - Cienfuegos - Santa Clara","Tour Trinidad - Cienfuegos (Nicho opcional)","Tour Tres ciudades Trinidad - Cienfuegos - Santa Clara",
+        "Tour Trinidad - Cienfuegos (Opcional Nicho)",  "Тур по Тринидаду - Сьенфуэгос (опционально Ничо)",
+        "Tour de Tres Ciudades: Trinidad - Cienfuegos - Santa Clara", "Тур по трем городам Тринидад - Сьенфуэгос - Санта-Клара","Tour Trinidad - Cienfuegos (Nicho opcional)","Tour Tres ciudades Trinidad - Cienfuegos - Santa Clara",
         "Trinidad - Cienfuegos Tour (Optional Nicho)",
         "Three Cities Tour Trinidad - Cienfuegos - Santa Clara",
       ],
@@ -696,7 +687,7 @@ export const placesData = [
         "Experience the vibrant nightlife of Havana at Tropicana, a legendary cabaret. Enjoy dazzling performances, lively music, and the glamour of Cuba's most iconic entertainment venue.",
       image: "/images/places/nuevos_places/Tropicana.webp",
       tag: ["Havana", "La Habana"],
-      itinerary: ["Tour por La Habana + Tropicana", "Havana Tour + Tropicana"],
+      itinerary: ["Tour por La Habana + Tropicana","Тур по Гаване + Тропикана", "Havana Tour + Tropicana"],
     },
     {
       id: 52,
@@ -705,7 +696,7 @@ export const placesData = [
         "Explore the picturesque Valle Yumuri, a lush valley surrounded by hills and rivers. Enjoy nature walks, capture breathtaking views, and immerse yourself in the tranquility of the landscape.",
       image: "/images/places/nuevos_places/Valle_Yumuri.webp",
       tag: "Matanzas",
-      itinerary: ["Tour por Matanzas", "Matanzas Tour"],
+      itinerary: ["Tour por Matanzas", "Matanzas Tour", "Тур по Матансасу"],
     },
     {
       id: 53,
@@ -714,7 +705,7 @@ export const placesData = [
         "Escape to the scenic beauty of Viñales, a valley surrounded by majestic limestone hills. Discover tobacco farms, explore caves, and enjoy the laid-back atmosphere of rural Cuba.",
       image: "/images/places/nuevos_places/Viñales.webp",
       tag: "Pinar Del Río",
-      itinerary: ["Tour Viñales - Soroa", "Viñales - Soroa Tour"],
+      itinerary: ["Tour Viñales - Soroa", "Тур Виньялес - Сороа", "Viñales - Soroa Tour"],
     },
     {
       id: 54,
@@ -723,7 +714,7 @@ export const placesData = [
         "Ascend to Vista Monserrate for panoramic views of Havana. Capture breathtaking cityscapes, enjoy a serene atmosphere, and marvel at the beauty of the Cuban capital from above.",
       image: "/images/places/nuevos_places/Vistas_Monserrate.webp",
       tag: "Matanzas",
-      itinerary: ["Tour por Matanzas", "Matanzas Tour"],
+      itinerary: ["Tour por Matanzas", "Matanzas Tour", "Тур по Матансасу"],
     },
     {
       id: 55,
@@ -734,8 +725,8 @@ export const placesData = [
       image: "/images/places/nuevos_places/Delfinario_Varadero.webp",
       tag: "Matanzas",
       itinerary: [
-        "City Tour Varadero for Hour",
-        "Recorrido por la ciudad de Varadero por hora",
+        "City Tour Varadero for Hour", "Однодневная экскурсия в Варадеро из Гаваны",
+        "Recorrido por la ciudad de Varadero por hora", "Тур по городу Варадеро по часам",
       ],
     },
   
@@ -747,9 +738,18 @@ export const placesData = [
       image: "/images/places/nuevos_places/Marina_Varadero.webp",
       tag: "Matanzas",
       itinerary: [
-        "City Tour Varadero for Hour",
-        "Recorrido por la ciudad de Varadero por hora",
+        "City Tour Varadero for Hour", "Однодневная экскурсия в Варадеро из Гаваны",
+        "Recorrido por la ciudad de Varadero por hora", "Тур по городу Варадеро по часам",
       ],
+    },
+    {
+      id: 57,
+      title: "Cañonazo en Castillo Morro Cabaña",
+      description:
+        "Experience the historical Cañonazo ceremony at Castillo Morro Cabaña, a nightly ritual that dates back centuries, offering a glimpse into Cuba's rich past.",
+      image: "/images/places/nuevos_places/Cañonazo.webp",
+      tag: ["Havana", "La Habana"],
+      itinerary: ["Tour por La Habana + Cañonazo","Тур по Гаване + Салют из пушки", "Havana Tour + Cannon Shot"],
     },
   ];
   

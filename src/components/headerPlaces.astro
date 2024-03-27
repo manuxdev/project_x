@@ -16,9 +16,8 @@ interface Place {
 const elementos = t('prov');
  const prov = elementos.places
 const {name} = Astro.params
+
 const place = prov.find((place:Place) => place.slug === name)
-
-
 ---
 
 <div class="relative xl:h-[500px] sm:h-[400px] h-[250px] bg-cover justify-between flex items-center flex-col"
@@ -37,7 +36,7 @@ style={`background-image: url(${place?.img})`}
          
             >{place?.desc}</p>
         </div>
-        <Itinerary client:visible place={place?.slug} lang = {lang}/>
+        <Itinerary client:visible place={place?.slug} lang={lang}/>
         
 </div>   
 

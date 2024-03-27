@@ -18,26 +18,26 @@ const place = places.find(place => place.name === name)
 
 const t = useTranslations(lang);
 
-
 const itineraryData = t('itinerary');
+const itinerarySec = t('itinerarySec')
 
 ---
 
 <Layout title=`${place?.name}`>
 
     <section class="h-screen" transition:name={`portada ${name} box`}>
-        <a href="/#places" class="rounded absolute top-0 left-0 z-50 bg-black w-8 h-8 justify-center items-center flex m-5"> {'<'} </a>
+        <a href={lang === 'en' ? '/#places' : `/${lang}/#places`} class="rounded absolute top-0 left-0 z-50 bg-black w-8 h-8 justify-center items-center flex m-5"> {'<'} </a>
 
         <HeaderPlaces/>
           
            
                 <div class="p-5 revealItinerary aspect-[16/5]">
-                    <h4 class="text-3xl p-5 flex justify-center">Recorrido</h4>
+                    <h4 class="text-3xl p-5 flex justify-center">{itinerarySec.h4}</h4>
                 <p id="itinerario" class="text-start revealItinerary leading-loose px-5  "></p>    
              </div>
              <ButtonsPlaces  placeName={place?.name}/>
              <div class="h-screen">
-                 <PlacesCard placeName={place?.name}  client:visible/>
+                 <PlacesCard placeName={place?.name} lang={lang} client:visible/>
                 <Footer/>
             </div>
     </section>

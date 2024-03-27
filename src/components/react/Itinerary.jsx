@@ -2,9 +2,6 @@ import { useEffect, useState } from "react";
 import ItineraryTag from "./ItineraryTag";
 import {  useTranslations } from '../../i18n/utils';
 
-
-
-
 function Itinerary({place, lang}) {
 const t = useTranslations(lang);
 
@@ -19,11 +16,10 @@ const itineraryData = t('itinerary');
   const handleItineraryChanges = (item) => {
     setItinerary(item);
     document.dispatchEvent(new CustomEvent('itineraryChange', { detail:`${item}`}))
-  
 };
 
   useEffect(() => {
-      const firstItinerary = matchingItineraries[0];
+    const firstItinerary = matchingItineraries[0];
       document.dispatchEvent(new CustomEvent('itineraryChange', { detail:`${firstItinerary.title}`}))
       setItinerary(firstItinerary.title );    
   

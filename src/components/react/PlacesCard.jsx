@@ -1,10 +1,14 @@
 
-import { placesData } from '../../data/places';
-import { itineraryData } from "../../data/itinerary"
+// import { placesData } from '../../data/places';
 import { useEffect, useState } from "react";
 import '../../utils/animation.css'
-const PlacesCard = ({placeName}) => {
+import {  useTranslations } from '../../i18n/utils';
+const PlacesCard = ({placeName, lang}) => {
 
+const t = useTranslations(lang);
+
+const itineraryData = t('itinerary');
+const placesData = t('places')
     const matchingItineraries = itineraryData.find((item) =>
     item.place.includes(placeName)
   );
