@@ -1,18 +1,16 @@
 
-// import { placesData } from '../../data/places';
 import { useEffect, useState } from "react";
 import '../../utils/animation.css'
 import {  useTranslations } from '../../i18n/utils.js';
 const PlacesCard = ({placeName, lang}) => {
 
-const t = useTranslations(lang);
-
-const itineraryData = t('itinerary');
-const placesData = t('places')
+    const t = useTranslations(lang);
+    
+    const itineraryData = t('itinerary');
+    const placesData = t('places')
     const matchingItineraries = itineraryData.find((item) =>
     item.place.includes(placeName)
-  );
-    
+    );
     const [selectedItinerary, setSelectedItinerary] = useState(matchingItineraries.title);
 
     const handleItineraryChange = (event) => {

@@ -20,19 +20,19 @@ const {name} = Astro.params
 const place = prov.find((place:Place) => place.slug === name)
 ---
 
-<div class="relative xl:h-[500px] sm:h-[400px] h-[250px] bg-cover justify-between flex items-center flex-col"
+<div class=" relative xl:h-[500px] sm:h-[400px] h-[250px] bg-cover justify-between flex items-center flex-col"
 style={`background-image: url(${place?.img})`}
 
 >
 <div class="absolute h-full w-full bg-opacity-80 bg-blend-multiply bg-gradient-to-t from-[#07111dee] bg-[#252525] z-10">
 </div>
-        <div class="flex flex-col gap-y-3 text-center z-20">
+        <div class="flex flex-col gap-y-3 text-center z-20 mt-10">
     
            
             <h1 class="md:text-7xl text-4xl font-extrabold xl:mt-20 mt-5 sm:mt-10" 
            >
             {elementos.visit} {place?.name}</h1>
-            <p class="md:text-base text-sm"
+            <p class="md:text-base text-sm px-4"
          
             >{place?.desc}</p>
         </div>

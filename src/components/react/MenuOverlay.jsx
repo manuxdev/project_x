@@ -24,14 +24,14 @@ const MenuOverlay = ({ links }) => {
       {navbarOpen ? (
         <button
           onClick={handlerChange}
-          className="flex items-center p-2 bg-[#20202091]"
+          className="flex items-center p-2 bg-[#20202091] rounded-lg"
         >
           <CloseMenu className='w-10 h-10 fill-palete-blue-light'/>
         </button>
       ) : (
         <button
           onClick={handlerChange}
-          className="flex items-center p-2 bg-[#20202091]"
+          className="flex items-center p-2 bg-[#20202091] rounded-lg"
         >
           <OpenMenu className='w-10 h-10 fill-palete-blue-light'/>
         </button>
@@ -43,7 +43,7 @@ const MenuOverlay = ({ links }) => {
             className=" fixed transition-all duration-75 delay-75  inset-0   cursor-pointer flex items-start mt-[18%] mr-[4%] justify-center h-screen z-[100]"
             onClick={closeModal}
           >
-             <div class=" w-[95%]  fixed  inset-0 mt-[15%] left-[2%] " >
+             <div className=" w-[95%]  fixed  inset-0 mt-[15%] left-[2%] " >
            <ul className="font-medium flex flex-col py-5 mt-4 rounded-lg bg-palete-blue-dark ">
                     <li>
                         {

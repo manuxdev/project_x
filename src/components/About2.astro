@@ -4,7 +4,6 @@ import { getLangFromUrl, useTranslations } from '../i18n/utils.js';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const about2 = t('about2');
-console.log(about2)
 interface Elemento {
  num: number; // Assuming 'num' is a number, adjust the type as necessary
  title: string; // Assuming 'title' is a string, adjust the type as necessary

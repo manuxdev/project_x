@@ -55,13 +55,14 @@ const feedBack = t('feedback');
       {
         //  
         feedback.map(feed => (
-            <div class="swiper-slide h-52 flex flex-col items-start justify-center text-start gap-2 bg-[#202020] rounded-lg p-6">
-                <h4 class="text-lg font-medium">{feed.name}</h4>
+            <a href="/" class="swiper-slide h-52 flex flex-col items-start justify-center text-start gap-2 bg-[#202020] rounded-lg p-6 hover:scale-105 transition-all">
+               
+              <h4 class="text-lg font-medium">{feed.name}</h4>
                 <p class="text-palete-white-blue">{feed.text}</p> 
                 <div class="stars-container">
                   ⭐⭐⭐⭐⭐ <strong>5.0</strong>
               </div>
-            </div>
+            </a>
         ))
       }
     </div>

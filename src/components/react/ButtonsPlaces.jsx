@@ -1,28 +1,38 @@
-import {places} from '../../data/prov'
+// import {places} from '../../data/prov'
+import { useTranslations } from '../../i18n/utils.js';
 
-const ButtonsPlaces = ({placeName}) => {
 
-  const currentIndex = places.findIndex(place => place.name === placeName);
-  const previousPlace = currentIndex > 0 ? places[currentIndex - 1] : null;
-  const nextPlace = currentIndex < places.length - 1 ? places[currentIndex + 1] : null;
+const ButtonsPlaces = ({placeName, lang}) => {
+
+const t = useTranslations(lang);
+
+const elementos = t('prov');
+ const prov = elementos.places
+
+  const currentIndex = prov.findIndex(place => place.name === placeName);
+  const previousPlace = currentIndex > 0 ? prov[currentIndex - 1] : null;
+  const nextPlace = currentIndex < prov.length - 1 ? prov[currentIndex + 1] : null;
 
   return (
-    <div className='px-5 flex gap-5'>
+    <div className='px-5 flex sm:flex-row flex-col  gap-5'>
        <button className="bg-palete-blue-dark xl:px-10 xl:py-3 py-2 px-5  rounded-lg hover:shadow-lg hover:shadow-palete-blue-light transition">Book Now</button>
+       <div className='flex justify-around sm:gap-5'>
        {
         previousPlace ? (
-          <a href={`/${previousPlace.name}`}>
+         
+          <a href={lang === 'en' ? `/${previousPlace.slug}` : `/${lang}/${previousPlace.slug}`}>
           <button className='border-2 border-white xl:px-10 xl:py-3 py-2 px-5  rounded-lg hover:shadow-lg hover:shadow-white transition'>{previousPlace.name}</button>
           </a>
         ): null
        }
         {
         nextPlace ? (
-          <a href={`/${nextPlace.name}`}>
+          <a href={lang === 'en' ? `/${nextPlace.slug}` : `/${lang}/${nextPlace.slug}`}>
           <button  className='border-2 border-white xl:px-10 xl:py-3 py-2 px-5  rounded-lg hover:shadow-lg hover:shadow-white transition'>{nextPlace.name}</button>
           </a>
         ): null
        }
+       </div>
     </div>
   )
 }

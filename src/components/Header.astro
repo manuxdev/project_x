@@ -1,5 +1,5 @@
 ---
-import Logo7 from './icons/LOGOS/logo7.astro'
+import Logo from './icons/logo.astro'
 import LenguajePicker from './LenguajePicker.astro'
 import MenuOverlay from './react/MenuOverlay'
 import { getLangFromUrl, useTranslations } from '../i18n/utils.js';
@@ -35,7 +35,8 @@ const links = [
 
 <header class="flex justify-between items-center w-full absolute top-0 z-20 pt-5 sm:px-20 px-5 revealHeader">
     <div>
-    <Logo7 class="w-28">
+    <!-- <Logo class="w-28"> -->
+        <img src="/logo.png" alt="Logo" class="sm:w-40 w-32">
     </div>
         <nav class="md:block hidden">
             <ul class="">
@@ -52,7 +53,7 @@ const links = [
             </ul>
         </nav>
       
-      <div class="flex gap-10">
+      <div class="flex sm:gap-10 gap-5">
        
             <LenguajePicker/>
                 
