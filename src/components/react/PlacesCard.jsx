@@ -30,7 +30,7 @@ const PlacesCard = ({placeName, lang}) => {
         {
             filteredPlaces.map(element =>(
                 <li key={element.title} className=' bg-[#202020] w-full rounded-lg flex-col section'>
-                   <div className=''>
+                   <div className='aspect-[4/3]'>
                     <img src={element.image} alt={element.title} className='object-cover rounded-lg aspect-[4/3]'/>
                    </div>
                    <div className='py-5 text-start px-5'>
