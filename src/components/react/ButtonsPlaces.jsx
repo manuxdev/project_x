@@ -15,11 +15,12 @@ const elementos = t('prov');
 
   return (
     <div className='px-5 flex sm:flex-row flex-col  gap-5'>
+      <a href="https://api.whatsapp.com/send?phone=5358118657"target='_blank'>
        <button className="bg-palete-blue-dark xl:px-10 xl:py-3 py-2 px-5  rounded-lg hover:shadow-lg hover:shadow-palete-blue-light transition">Book Now</button>
+       </a>
        <div className='flex justify-around sm:gap-5'>
        {
         previousPlace ? (
-         
           <a href={lang === 'en' ? `/${previousPlace.slug}` : `/${lang}/${previousPlace.slug}`}>
           <button className='border-2 border-white xl:px-10 xl:py-3 py-2 px-5  rounded-lg hover:shadow-lg hover:shadow-white transition'>{previousPlace.name}</button>
           </a>

@@ -41,7 +41,6 @@ const PlacesCard = ({placeName, lang}) => {
             ))
         }
         </ul>
-        <div className='h-[200px]'></div>
     </div>
 
   )
