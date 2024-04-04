@@ -1,7 +1,7 @@
 export const languages = {
     en: 'en',
     es: 'es',
-    rs:'rs'
+    ru:'ru'
   };
   
   export const defaultLang = 'en';
@@ -1011,7 +1011,7 @@ export const languages = {
             id: 55,
             title: "Varadero Dolphinarium",
             description:
-              "",
+              "The Varadero Dolphinarium in Cuba offers exciting shows and interactive activities that allow visitors to interact up-close with dolphins while promoting marine conservation.",
         
             image: "/images/places/nuevos_places/Delfinario_Varadero.webp",
             tag: "Matanzas",
@@ -1025,7 +1025,7 @@ export const languages = {
             id: 56,
             title: "Varadero Marina",
             description:
-              "",
+              "Marina Varadero is a marina located in Varadero, Cuba, that offers complete nautical services and accommodation for boats, promoting maritime tourism and recreational boating.",
             image: "/images/places/nuevos_places/Marina_Varadero.webp",
             tag: "Matanzas",
             itinerary: [
@@ -2048,7 +2048,7 @@ export const languages = {
             id: 55,
             title: "Delfinario Varadero",
             description:
-              "",
+              "El delfinario de Varadero, en Cuba, ofrece espectáculos emocionantes y actividades interactivas que permiten a los visitantes interactuar de cerca con delfines mientras promueve la conservación marina.",
         
             image: "/images/places/nuevos_places/Delfinario_Varadero.webp",
             tag: "Matanzas",
@@ -2062,7 +2062,7 @@ export const languages = {
             id: 56,
             title: "Marina de Varadero",
             description:
-              "",
+              "La Marina Varadero es un puerto deportivo ubicado en Varadero, Cuba, que ofrece servicios náuticos completos y alojamiento para embarcaciones, promoviendo el turismo marítimo y la navegación recreativa.",
             image: "/images/places/nuevos_places/Marina_Varadero.webp",
             tag: "Matanzas",
             itinerary: [
@@ -2083,7 +2083,7 @@ export const languages = {
           },
         
   
-    rs: {
+    ru: {
       nav:{
         'home':'Начало',
         'places': 'Направления',
@@ -3084,7 +3084,7 @@ export const languages = {
             id: 55,
             title: "Дельфинарий Варадеро",
             description:
-              "",
+              "Дельфинарий Варадеро на Кубе предлагает захватывающие шоу и интерактивные мероприятия, которые позволяют посетителям пообщаться с дельфинами и одновременно способствовать сохранению морской среды.",
         
             image: "/images/places/nuevos_places/Delfinario_Varadero.webp",
             tag: "Matanzas",
@@ -3098,7 +3098,7 @@ export const languages = {
             id: 56,
             title: "Варадеро Марина",
             description:
-              "",
+              "Марина Варадеро — это пристань, расположенная в Варадеро, Куба, которая предлагает полный морской сервис и размещение для лодок, продвигая морской туризм и прогулочный катание на лодках.",
             image: "/images/places/nuevos_places/Marina_Varadero.webp",
             tag: "Matanzas",
             itinerary: [

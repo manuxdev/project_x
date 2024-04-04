@@ -4,6 +4,7 @@ import Instagram from './icons/Instagram.astro'
 import Whatsapp from './icons/Whatsapp.astro'
 import '../utils/animation.css'
 import { getLangFromUrl, useTranslations } from '../i18n/utils.js';
+import Vk from './icons/Vk.astro';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
@@ -29,10 +30,11 @@ style={`background-image: url(/images/hero.webp)`}
             <button  class="bg-palete-blue-dark xl:px-10 xl:py-3 py-2 px-5  rounded-lg hover:shadow-lg hover:shadow-palete-blue-light transition"> {elementos.button}</button>
         </a>
         </div>
-        <div class="flex gap-x-8 mt-8 sm:justify-start justify-center revealHero">
+        <div class="flex gap-x-6 mt-8 sm:justify-start justify-center revealHero">
             <Whatsapp class="w-10 h-10 hover:scale-110 transition-all"/>
             <Facebook class="w-10 h-10 hover:scale-110 transition-all"/>
             <Instagram class="w-10 h-10 hover:scale-110 transition-all"/>
+            <Vk class="w-10 h-10 hover:scale-110 transition-all fill-white"/>
         </div>
     </div>
 </section>
