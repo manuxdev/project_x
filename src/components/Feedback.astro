@@ -1,5 +1,6 @@
 ---
 import { getLangFromUrl, useTranslations } from '../i18n/utils.js';
+import Star from './icons/Star.astro';
 
 const feedback = [
     {
@@ -59,8 +60,15 @@ const feedBack = t('feedback');
                
               <h4 class="text-lg font-medium">{feed.name}</h4>
                 <p class="text-palete-white-blue">{feed.text}</p> 
-                <div class="stars-container">
-                  ⭐⭐⭐⭐⭐ <strong>5.0</strong>
+                <div class="flex items-center justify-center gap-x-2">
+                  <div class="flex">
+                    <Star class="w-6 stroke-[#022A1C] fill-[#04DA8D]"/>
+                    <Star class="w-6 stroke-[#022A1C] fill-[#04DA8D]"/>
+                    <Star class="w-6 stroke-[#022A1C] fill-[#04DA8D]"/>
+                    <Star class="w-6 stroke-[#022A1C] fill-[#04DA8D]"/>
+                    <Star class="w-6 stroke-[#022A1C] fill-[#04DA8D]"/>
+                    </div>
+                   <strong>5.0</strong>
               </div>
             </a>
         ))
