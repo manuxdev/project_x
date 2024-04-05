@@ -30,7 +30,7 @@ const place = prov.find((place:Place) => place.slug === name)
 // console.log(itinerarySec)
 ---
 
-<Layout title=`${place?.name}` desc="Почувствуйте надежность, эффективность и качество, которые может предложить только наша служба такси. Под руководством высококвалифицированных специалистов мы гарантируем безопасную, пунктуальную и комфортную поездку.">
+<Layout title=`${place?.name} | Кубинские классические туры` desc=`Узнайте о маршрутах и ​​наиболее знаковых местах для посещения в городе ${place}.`>
 
     <section class="h-screen" transition:name={`portada ${name} box`}>
         <a href={lang === 'en' ? '/#places' : `/${lang}/#places`} class="rounded absolute top-0 left-0 z-50 bg-black w-8 h-8 justify-center items-center flex m-5"> {'<'} </a>
