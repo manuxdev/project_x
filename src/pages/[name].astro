@@ -35,7 +35,7 @@ const place = prov.find((place:Place) => place.slug === name)
 
 ---
 
-<Layout title=`${place?.name} | Cuban Classic Trips` desc=`Learn about the most emblematic itineraries and places to visit in the city of ${place}.`>
+<Layout title=`${place?.name} | Cuban Classic Trips` desc=`Learn about the most emblematic itineraries and places to visit in the city of ${place?.name}.`>
     <!-- transition:name={`portada ${name} box`} -->
     <section class="h-screen"
     >
