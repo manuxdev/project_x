@@ -1,4 +1,4 @@
-.section {
+ .section {
     animation: reveal ease-in-out both;
     animation-timeline: view();
     animation-range: cover 10% contain 50%;
@@ -32,6 +32,42 @@
     animation: Progres ease-in-out both;
     animation-timeline: view();
     animation-range: cover 10%  contain 50%;
+} 
+
+
+/* Estilos que solo se aplicarán si el navegador NO soporta animation-timeline */
+@supports not (animation-timeline: view()) {
+    /* .section {
+        animation: reveal ease-in-out both;
+        animation-range: cover 10% contain 50%;
+    } */
+
+    /* .textDesapear {
+        animation: textDesapear linear both;
+        animation-range: entry 180% exit 60%;
+    } */
+
+    .revealHeader {
+        animation: revealHeader 500ms ease-out forwards;
+    }
+
+    .revealHero {
+        animation: revealHero 600ms ease-out forwards;
+    }
+
+    /* .revealPlaces {
+        animation: revealPlaces linear both;
+        animation-range: cover 10% contain 40%;
+    } */
+
+    .revealItinerary {
+        animation: revealHeader 300ms ease-out forwards;
+    }
+/* 
+    .progres {
+        animation: Progres ease-in-out both;
+        animation-range: cover 10% contain 50%;
+    } */
 }
 
 /* .revealAboutText{
