@@ -18,7 +18,7 @@ export const places = [
         name:"Matanzas",
         slug:"Matanzas",
         desc:"Spectacular beaches, warm weather, varied tourist activities and great hospitality.",
-        img:'/images/varadero.webp',
+        img:'/images/Parque_Libertad.webp',
         href:"/"
     },
     {

@@ -50,7 +50,7 @@ export const languages = {
               name:"Matanzas",
               slug:"Matanzas",
               desc:"Spectacular beaches, warm weather, varied tourist activities and great hospitality.",
-              img:'/images/varadero.webp',
+              img:'/images/Parque_Libertad.webp',
               href:"/"
           },
           {
@@ -1089,7 +1089,7 @@ export const languages = {
                      name: "Matanzas",
                      slug: "Matanzas",
                      desc: "Playas espectaculares, clima cálido, diversas actividades turísticas y gran hospitalidad.",
-                     img: '/images/varadero.webp',
+                     img: '/images/Parque_Libertad.webp',
                      href: "/"
                      },
                      {
@@ -2125,7 +2125,7 @@ export const languages = {
               name: "Матансас",
               slug:"Matanzas",
               desc: "Впечатляющие пляжи, теплое климат, разнообразные туристические мероприятия и прекрасное гостеприимство.",
-              img: '/images/varadero.webp',
+              img: '/images/Parque_Libertad.webp',
               href: "/"
             },
             {
